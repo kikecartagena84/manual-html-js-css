@@ -4,8 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de HTML CSS Y JS</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+
+       #menuLateral {
+           width:250px; 
+           /* display: inline-block;  */ 
+           background-color: lightgrey;
+           color:darkgray;
+           position: fixed; /* Barra letarl Fija */
+           top:0px; /* Se posiciona desde arriba */
+           height:100vh; 
+           padding:10px;
+       }
+
+       #menuLateral ul{
+            margin:10px;
+        }
+
+       #contenedorArticulos {
+       /* display: inline-block;  */
+        /* background-color: lightblue ;*/
+        padding:10px;
+        position: absolute;
+        left:250px;
+        /*width: calc(100% - 255px);*/
+       }
+
+       #contenedorArticulos .articulo {
+        margin:10px;
+       }
+
+       body {
+        margin: 0px;
+       }
+
+       #miSitio {
+            /* margin:0px; */
+            background-color: #f2f2f2;
+            color:darkslategray
+        }
+
+       .articulo {
+        min-height: 300px;
+       }
+    </style>
 </head>
 <body>
-    <h1>Hola Mundo!</h1>
+    <div id="miSitio">
+      
+        <!-- Menu Lateral -->
+        <div id="menuLateral">
+            <h3>Menu de Artículos</h3>
+            <ul>
+                <li><a href="#artTextos">Textos</a></li>
+                <li><a href="#artLinks">Links</a></li>
+                <li><a href="#artTablas">Tablas</a></li>
+                <li><a href="#artColores">Colores</a></li>
+                <li><a href="#artLayout">Layout Tag</a></li>
+            </ul>
+        </div>
+
+        <!-- Contenidos  -->
+        <div id="contenedorArticulos">    
+            <h1 style="vertical-align: bottom;display: inline-block; margin-bottom:0px;">Manual de HTML y CSS</h1>
+            <small style="margin-left: 10px; vertical-align: bottom;display: inline-block;">(En desarrollo)</small><hr>
+
+            <article id="artTextos" class="articulo">
+                <h1>Etiquetas de Texto</h1>
+                Poseemos distintas etiquetas de texto. Algunas de ellas son:<br>
+                <p>
+                    <a href="">&lt;b&gt;</a> - para <b>Negrita</b>, se utiliza para resaltar texto.<br><br>
+                    <a href="">&lt;i&gt;</a> - para <i>Itálica</i>, se utiliza para dar énfasis a un texto.<br><br>
+                    <a href="">&lt;u&gt;</a> - para <u>Subrayar</u>, se utiliza para dar énfasis a un texto.<br><br>
+                    <a href="">&lt;strong&gt;</a> - para resaltar y dar <strong>Importancia</strong> a un texto.<br><br>
+                    <a href="">&lt;h1&gt;</a> <a href="">&lt;h2&gt;</a> <a href="">&lt;h3&gt;</a> <a href="">&lt;h4&gt;</a> <a href="">&lt;h5&gt;</a> <a href="">&lt;h6&gt;</a> - Son distintos tipos de cabecera de texto, siendo <b>H1</b> la mas importante, y <b>H6</b> la de menor importancia.<br>
+                </p>
+
+                <h1>Hola Mundo! (H1)</h1>
+                <h2>Hola Mundo! (H2)</h2>
+                <h3>Hola Mundo! (H3)</h3>
+                <h4>Hola Mundo! (H4)</h4>
+                <h5>Hola Mundo! (H5)</h5>
+                <h6>Hola Mundo! (H6)</h6>
+
+                <a href="">&lt;article&gt;</a> - se utiliza para generar artículos con contenido variado.<br><br>
+                <a href="">&lt;p&gt;</a> - se utiliza para generar párrafos de texto.<br><br>
+                <a href="">&lt;br&gt;</a> - se utiliza para generar saltos de línea.<br><br>
+                <a href="">&lt;span&gt;</a> - se utiliza para generar <span style="color:red;">texto con estilo</span>.<br><br>
+                <a href="">&lt;pre&gt;</a> - se utiliza para generar texto preformateado.<br>
+
+                <pre>Soy un texto pre-formateado
+                    con saltos de línea
+                    y espacios
+                        y tabulaciones
+                    y caracteres especiales < > & " '
+                    <b>soy html</b>
+                </pre>
+
+                <hr>
+            </article>
+
+            <article id="artLinks" class="articulo">
+                <h3>Links</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, at unde omnis quaerat corrupti cumque facere voluptas commodi ex veritatis est. Ipsam accusamus quaerat consectetur, repellendus nostrum cum quod illo!</p>
+                <hr>
+            </article>
+
+            <article id="artTablas" class="articulo">
+                <h3>Tablas</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, at unde omnis quaerat corrupti cumque facere voluptas commodi ex veritatis est. Ipsam accusamus quaerat consectetur, repellendus nostrum cum quod illo!</p>
+                <hr>
+            </article>
+
+            <article id="artColores" class="articulo">
+                <h3>Colores</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, at unde omnis quaerat corrupti cumque facere voluptas commodi ex veritatis est. Ipsam accusamus quaerat consectetur, repellendus nostrum cum quod illo!</p>
+                <hr>
+            </article>
+            <article id="artLayout" class="articulo">
+                <h3>Layout</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, at unde omnis quaerat corrupti cumque facere voluptas commodi ex veritatis est. Ipsam accusamus quaerat consectetur, repellendus nostrum cum quod illo!</p>
+                <hr>
+            </article>
+        </div>
+    </div>
 </body>
 </html>
