@@ -1,0 +1,64 @@
+ /* Set box-sizing property to border-box */
+ * {
+    box-sizing: border-box;
+  }
+
+  body {
+      margin:0px;
+      font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  #miSitio {
+      /* margin:0px; */
+      background-color: #f2f2f2;
+      color:darkslategray
+  }
+
+  /* Sidebar styles */
+  .sidebar {
+      width: 250px;
+      /* display: inline-block; */
+      background-color: lightgrey;
+      color:darkgray;
+      vertical-align: top;
+      height: 100vh;
+      position: fixed; /* Fix the sidebar position */
+      top: 0; /* Place it at the top of the viewport */
+      padding: 10px;
+  }
+
+  /* Content styles */
+  .content {
+      /* width: calc(100% - 250px); */
+      /* display: inline-block; */
+      padding: 10px;
+      position:absolute; /* Fix the sidebar position */
+      left: 250px;
+      background-color: #f2f2f2;
+  }
+
+  /* Cada artículo estará contenido en una caja */
+  .content article {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    filter: drop-shadow(1px 1px 1px gray);
+    margin-bottom: 50px;
+  }
+
+  .sidebar ul {
+      margin: 10px;
+  }
+
+
+  .code {    
+        background-color: #4d4d4d;
+        color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: source-code-pro, Menlo, Monaco, "Courier New", Courier, monospace;
+      width: 90%;
+      margin: 0 auto;
+  }
