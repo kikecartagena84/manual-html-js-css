@@ -757,6 +757,150 @@
 
                 </article>
 
+                <!-- Articulo Formulario -->
+                <article id="artFormulario">
+
+                    <style>
+                        #formEjemplo {
+                            max-width: 50vw;
+                            margin: 10px auto;
+                            padding: 10px 20px;
+                            background: #f4f7f8;
+                            border-radius: 8px;
+                        }
+    
+                        #formEjemplo input[type="text"],
+                        #formEjemplo input[type="email"],
+                        #formEjemplo input[type="password"],
+                        #formEjemplo textarea,
+                        #formEjemplo select {
+                            background: rgba(255, 255, 255, 0.1);
+                            border: none;
+                            font-size: 16px;
+                            height: auto;
+                            margin: 0;
+                            outline: 0;
+                            padding: 15px;
+                            width: 100%;
+                            background-color: #e8eeef;
+                            color: #8a97a0;
+                            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+                            margin-bottom: 30px;
+                        }
+    
+                        #formEjemplo input[type="radio"],
+                        #formEjemplo input[type="checkbox"] {
+                            margin: 0 4px 8px 0;
+                        }
+    
+                        #formEjemplo select {
+                            padding: 6px;
+                            height: 32px;
+                            border-radius: 2px;
+                        }
+    
+                        #formEjemplo button {
+                            padding: 19px 39px 18px 39px;
+                            color: #FFF;
+                            background-color: #4bc970;
+                            font-size: 18px;
+                            text-align: center;
+                            font-style: normal;
+                            border-radius: 5px;
+                            width: 100%;
+                            border: 1px solid #3ac162;
+                            border-width: 1px 1px 3px;
+                            box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+                            margin-bottom: 10px;
+                        }
+    
+                        #formEjemplo fieldset {
+                            margin-bottom: 30px;
+                            /* border: none; */
+                        }
+    
+                        #formEjemplo legend {
+                            font-size: 1.4em;
+                            margin-bottom: 10px;
+                        }
+    
+                        #formEjemplo label {
+                            margin-bottom: 8px;
+                        }
+                        #formEjemplo .label {
+                            display: block;
+                            margin-bottom: 8px;
+                        }
+                    </style>
+                    
+                    <h4>Formulario de Ejemplo</h4>
+
+                <form action="index.html" method="GET" id="formEjemplo">
+                    <h1> Registro </h1>
+
+                    <fieldset>
+                        <legend> Información Básica</legend>
+
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name">
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_email">
+
+                        <label for="password">Clave:</label>
+                        <input type="password" id="password" name="user_password">
+
+                        <span class="label">Edad:</span>
+                        <input type="radio" id="under_18" value="under_18" name="user_age" checked>
+                            <label for="under_18" class="light">Menor de 18</label><br>
+                        <input type="radio" id="over_18" value="over_18" name="user_age">
+                            <label for="over_18" class="light">Mayor de 18</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> Tu Perfil</legend>
+
+                        <label for="bio">Bio:</label>
+                        <textarea id="bio" name="user_bio"></textarea>
+
+                        <label for="job">Puesto:</label>
+                        <select id="job" name="user_job">
+                            <optgroup label="Web">
+                                <option value="frontend_developer">Front-End Developer</option>
+                                <option value="php_developer">PHP Developer</option>
+                                <option value="python_developer">Python Developer</option>
+                                <option value="rails_developer">Rails Developer</option>
+                                <option selected value="web_designer">Web Designer (por defecto)</option>
+                                <option disabled value="wordpress_developer">Wordpress Developer (deshabilitado)</option>
+                            </optgroup>
+                            <optgroup label="Mobile">
+                                <option value="android_developer">Android Developer</option>
+                                <option value="ios_developer">IOS Developer</option>
+                                <option value="mobile_designer">Mobile Designer</option>
+                            </optgroup>
+                            <optgroup label="Business">
+                                <option value="business_owner">Business Owner</option>
+                                <option value="freelancer">Freelancer</option>
+                            </optgroup>
+                        </select>
+
+                        <span class="label">Intereses:</span>
+                        <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
+                            class="light" for="development">Desarrollo</label><br>
+                        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label
+                            class="light" for="design">Diseño</label><br>
+                        <input type="checkbox" id="business" value="interest_business" name="user_interest"><label
+                            class="light" for="business">Programación</label>
+
+                    </fieldset>
+
+                    <button>Registrarse</button>
+
+                </form>
+
+                </article>
+
                                     <!-- Articulo X -->
                 <article id="artXXXX" style="display:none;">
                     <h1>Articulo</h1>
