@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        height: 100vh;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .contenido {
+        flex-wrap: wrap-reverse;
+        color:white;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    aside{
+        flex: 0 200px;
+    }
+    section{
+        flex: 70%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer {
+        text-align: center; 
+    }
+
+    article {
+        flex: 50%;
+    }
+</style>
+
+<style>
+    body {
+        background-color: gray;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    header{
+        background-color: aqua;
+        padding: 10px;
+    }
+    header li {
+        display: inline-block; /* quita formato display: list-item; */
+        padding: 10px;
+
+    }
+    aside li {
+        display: block; /* quita formato display: list-item; */
+        
+
+    }
+    header a:hover {
+        background-color: #ddd;
+    }
+    header a{
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    aside{
+        background-color: red;
+    }
+    section{
+        background-color: blue;
+    }
+    footer {
+        background-color: aqua;
+    }
+
+    footer, section, aside {
+        padding: 20px;
+    }
+    .contenido {
+        margin: 0 80px 0 80px;
+    }
+    article{
+        margin-bottom: 100px;
+        border-bottom: 1px solid black;
+    }
+</style>
+
+<body>
+    <header>
+        <a id="logo" href="./index.html">
+            <img src="img/logo.svg" alt="">
+            <span>Mi empresa</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="row contenido">
+        <section>
+            <article>
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis voluptatum tenetur aut velit eos minus pariatur delectus eveniet ea tempora at cumque rerum odit facere adipisci, beatae veniam soluta?</p>
+            </article>
+            <article>
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis voluptatum tenetur aut velit eos minus pariatur delectus eveniet ea tempora at cumque rerum odit facere adipisci, beatae veniam soluta?</p>
+            </article>
+            <article>
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis voluptatum tenetur aut velit eos minus pariatur delectus eveniet ea tempora at cumque rerum odit facere adipisci, beatae veniam soluta?</p>
+            </article>
+            <article>
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis voluptatum tenetur aut velit eos minus pariatur delectus eveniet ea tempora at cumque rerum odit facere adipisci, beatae veniam soluta?</p>
+            </article>
+            <article>
+                <h1>Título</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis voluptatum tenetur aut velit eos minus pariatur delectus eveniet ea tempora at cumque rerum odit facere adipisci, beatae veniam soluta?</p>
+            </article>
+        </section>
+        <aside>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </aside>
+    </div>
+
+
+
+
+    <footer>Copyright 2023</footer>
+
+</body>
+</html>
