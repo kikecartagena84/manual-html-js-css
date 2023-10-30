@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Manual Diseño Web (HTML JS y CSS)</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Diseño Web (HTML JS y CSS)</title>
 
-        <!-- Estilos generales del Manual -->
-        <link rel="stylesheet" href="css/styles.css">
 
-    </head>
+    <!-- Estilos generales del Manual -->
+    <link rel="stylesheet" href="css/styles.css">
 
-    <body>
+</head>
 
-        <div id="miSitio">
-            <!-- sideBar / Menu -->
-            <div class="sidebar">
-                <h3>Menu de Artículos</h3>
-                <ul style="margin:0px;">
-                    <li><a href="#artTextos">Texto</a></li>
-                    <li><a href="#artLinks">Links</a></li>
-                    <li><a href="#artCenterDiv">Centrar un DIV</a></li>
-                    <li><a href="#artTablas">Tablas</a></li>
-                    <li><a href="#artColores">Colores</a></li>
-                    <li><a href="#artLayout">Layout Tags</a></li>
-                    <li><a href="#artNavbars">NavBars</a></li>
-                    <li><a href="#artFormularios">Formularios</a></li>
-                    <li><a href="#artFlexbox">Flexbox</a></li>
-                    <!--
+<body>
+
+    <div id="miSitio">
+        <!-- sideBar / Menu -->
+        <div class="sidebar">
+            <h3>Menu de Artículos</h3>
+            <ul style="margin:0px;">
+                <li><a href="#artTextos">Texto</a></li>
+                <li><a href="#artLinks">Hipervínculos / Links</a></li>
+                <li><a href="#artCenterDiv">Centrar un DIV</a></li>
+                <li><a href="#artTablas">Tablas</a></li>
+                <li><a href="#artColores">Colores</a></li>
+                <li><a href="#artLayout">Layout Tags</a></li>
+                <li><a href="#artNavbars">NavBars</a></li>
+                <li><a href="#artFormularios">Formularios</a></li>
+                <li>
+                    <a href="#artFlexbox">Flexbox</a>
+                    <ul>
+                        <li><a href="#flex-direction">Direction</a></li>
+                        <li><a href="#flex-wrap">Wrap</a></li>
+                        <li><a href="#flex-justify-content">Justify Content</a></li>
+                        <li><a href="#flex-align-items">Align Items</a></li>
+                        <li><a href="#flex-align-self">Align Self</a></li>
+                        <li><a href="#flex-grow">Grow</a></li>
+                        <li><a href="#flex-align-content">Align Content</a></li>
+                    </ul>
+                </li>
                     <li><a href="#artSelectores">Selectores</a></li>
+                <!--
                     <li><a href="#artImages">Imágenes</a></li>
                     <li><a href="#fuentes">fuentes</a></li>
                     <li><a href="#codigo">Código</a></li> -->
-                </ul>
+            </ul>
 
-                <h3>Bloques HTML</h3>
-                <ul style="margin:0px;">
-                    <li><a href="#artNavbars">NavBars</a></li>
-                    <li><a href="#artFormRegistro">Form Registro</a></li>
-                    
-                </ul>
+            <h3>Bloques HTML</h3>
+            <ul style="margin:0px;">
+                <li><a href="#artNavbars">NavBars</a></li>
+                <li><a href="#artFormRegistro">Form Registro</a></li>
 
-            </div><!-- mind the gap of the space. 
+            </ul>
+
+        </div><!-- mind the gap of the space. 
                 
                 Contenido 
             -->
-            <div class="content">
+        <div class="content">
 
-                <h1 style="vertical-align: bottom;display: inline-block; margin-bottom:0px;">Manual de HTML y CSS</h1>
-                <small style="margin-left: 10px; vertical-align: bottom;display: inline-block;">(En desarrollo)</small>
-                <hr>
+            <h1 style="vertical-align: bottom;display: inline-block; margin-bottom:0px;">Manual de HTML y CSS</h1>
+            <small style="margin-left: 10px; vertical-align: bottom;display: inline-block;">(En desarrollo)</small>
+            <hr>
 
-                <!-- Artículo de Textos -->
-                <article id="artTextos">
-                    <h1>Etiquetas de Texto</h1>
-                    Poseemos distintas etiquetas de texto. Algunas de ellas son:<br>
-                    <p>
-                        <a href="">&lt;b&gt;</a> - para <b>Negrita</b>, se utiliza para resaltar texto.<br><br>
-                        <a href="">&lt;i&gt;</a> - para <i>Itálica</i>, se utiliza para dar énfasis a un texto.<br><br>
-                        <a href="">&lt;u&gt;</a> - para <u>Subrayar</u>, se utiliza para dar énfasis a un texto.<br><br>
-                        <a href="">&lt;strong&gt;</a> - para resaltar y dar <strong>Importancia</strong> a un texto.<br><br>
-                        <a href="">&lt;h1&gt;</a> <a href="">&lt;h2&gt;</a> <a href="">&lt;h3&gt;</a> <a
-                            href="">&lt;h4&gt;</a> <a href="">&lt;h5&gt;</a> <a href="">&lt;h6&gt;</a> - Son distintos tipos
-                        de cabecera de texto, siendo <b>H1</b> la mas importante, y <b>H6</b> la de menor importancia.<br>
-                    </p>
+            <!-- Artículo de Textos -->
+            <article id="artTextos">
+                <h1>Etiquetas de Texto</h1>
+                Poseemos distintas etiquetas de texto. Algunas de ellas son:<br>
+                <p>
+                    <a href="">&lt;b&gt;</a> - para <b>Negrita</b>, se utiliza para resaltar texto.<br><br>
+                    <a href="">&lt;i&gt;</a> - para <i>Itálica</i>, se utiliza para dar énfasis a un texto.<br><br>
+                    <a href="">&lt;u&gt;</a> - para <u>Subrayar</u>, se utiliza para dar énfasis a un texto.<br><br>
+                    <a href="">&lt;strong&gt;</a> - para resaltar y dar <strong>Importancia</strong> a un texto.<br><br>
+                    <a href="">&lt;h1&gt;</a> <a href="">&lt;h2&gt;</a> <a href="">&lt;h3&gt;</a> <a
+                        href="">&lt;h4&gt;</a> <a href="">&lt;h5&gt;</a> <a href="">&lt;h6&gt;</a> - Son distintos tipos
+                    de cabecera de texto, siendo <b>H1</b> la mas importante, y <b>H6</b> la de menor importancia.<br>
+                </p>
 
-                    <h1>Hola Mundo! (H1)</h1>
-                    <h2>Hola Mundo! (H2)</h2>
-                    <h3>Hola Mundo! (H3)</h3>
-                    <h4>Hola Mundo! (H4)</h4>
-                    <h5>Hola Mundo! (H5)</h5>
-                    <h6>Hola Mundo! (H6)</h6>
+                <h1>Hola Mundo! (H1)</h1>
+                <h2>Hola Mundo! (H2)</h2>
+                <h3>Hola Mundo! (H3)</h3>
+                <h4>Hola Mundo! (H4)</h4>
+                <h5>Hola Mundo! (H5)</h5>
+                <h6>Hola Mundo! (H6)</h6>
 
-                    <a href="">&lt;article&gt;</a> - se utiliza para generar artículos con contenido variado.<br><br>
-                    <a href="">&lt;p&gt;</a> - se utiliza para generar párrafos de texto.<br><br>
-                    <a href="">&lt;br&gt;</a> - se utiliza para generar saltos de línea.<br><br>
-                    <a href="">&lt;span&gt;</a> - se utiliza para generar <span style="color:red;">texto con
-                        estilo</span>.<br><br>
-                    <a href="">&lt;pre&gt;</a> - se utiliza para generar texto preformateado. Muy utilizado para mostrar
-                    código.<br>
+                <a href="">&lt;article&gt;</a> - se utiliza para generar artículos con contenido variado.<br><br>
+                <a href="">&lt;p&gt;</a> - se utiliza para generar párrafos de texto.<br><br>
+                <a href="">&lt;br&gt;</a> - se utiliza para generar saltos de línea.<br><br>
+                <a href="">&lt;span&gt;</a> - se utiliza para generar <span style="color:red;">texto con
+                    estilo</span>.<br><br>
+                <a href="">&lt;pre&gt;</a> - se utiliza para generar texto preformateado. Muy utilizado para mostrar
+                código.<br>
 
-                    <pre class="code">Soy un texto pre-formateado
+                <pre class="code">Soy un texto pre-formateado
                         con saltos de línea,
                         espacios,
                             tabulaciones
@@ -88,116 +100,116 @@
                         <b>soy html</b>
                     </pre>
 
-                </article>
+            </article>
 
-                <!-- Artículo de Links -->
-                <article id="artLinks">
-                    <h1>Links</h1>
-                    <p>Poseemos distintos tipos de enalces/Links probaremos abrir la web de <b>https://CEI.es</b>:</p><br>
-
-
-                    <a href="https://cei.es" target="_self" title="Cargar sitio web del CEI">Enlace self</a> Abrir el enlace
-                    en esta misma página<br>
-                    <a href="https://cei.es" target="_blank" title="Cargar sitio web del CEI">Enlace blank</a> Abrir el
-                    enlace en una pestaña Nueva<br>
-                    <a href="https://cei.es" target="_frame1" title="Cargar sitio web del CEI">Enlace dentro de frame1</a>
-                    Abrir el enlace dentro del Frame 1 utilizando <b>target="nombreDelFrame1"</b><br>
-                    <a href="https://cei.es" target="_frame2" title="Cargar sitio web del CEI">Enlace dentro de frame2</a>
-                    Abrir el enlace dentro del Frame 2 utilizando <b>target="nombreDelFrame2"</b><br>
-                    <a href="#artLinks" title="Utilizar un link a una sección propia de esta página">Enlace Anchor</a>
-                    Podemos movernos dentro de este mismo documento utilizando el enlace Ancla con un ID específico
-                    <b>href="#idElemento"</b><br>
-
-                    <table style="width:100%;">
-                        <tr>
-                            <td style="width:33%;">
-                                frame 0<br>
-                                <iframe src="" frameborder="0"
-                                    style="border:3px dashed #ef4444;height:200px;padding:30px 0 0 30px;"
-                                    srcdoc="<a target='_top' href='https://cei.es'>Link con target top</a><br><a target='_parent' href='https://cei.es'>Link con target parent</a>"></iframe>
-                            </td>
-                            <td style="width:33%;">
-                                frame 1<br>
-                                <iframe src="" name="_frame1" frameborder="1"
-                                    style="border:3px dashed #efec44; width:200px;height:200px; padding:10px; margin:10px;"></iframe>
-                            </td>
-                            <td style="width:33%;">
-                                frame 2<br>
-                                <iframe src="" name="_frame2" frameborder="1"
-                                    style="width:200px;height:200px; padding:10px; margin:10px;"></iframe>
-                            </td>
-                        </tr>
-                    </table>
+            <!-- Artículo de Links -->
+            <article id="artLinks">
+                <h1>Links</h1>
+                <p>Poseemos distintos tipos de enalces/Links probaremos abrir la web de <b>https://CEI.es</b>:</p><br>
 
 
+                <a href="https://cei.es" target="_self" title="Cargar sitio web del CEI">Enlace self</a> Abrir el enlace
+                en esta misma página<br>
+                <a href="https://cei.es" target="_blank" title="Cargar sitio web del CEI">Enlace blank</a> Abrir el
+                enlace en una pestaña Nueva<br>
+                <a href="https://cei.es" target="_frame1" title="Cargar sitio web del CEI">Enlace dentro de frame1</a>
+                Abrir el enlace dentro del Frame 1 utilizando <b>target="nombreDelFrame1"</b><br>
+                <a href="https://cei.es" target="_frame2" title="Cargar sitio web del CEI">Enlace dentro de frame2</a>
+                Abrir el enlace dentro del Frame 2 utilizando <b>target="nombreDelFrame2"</b><br>
+                <a href="#artLinks" title="Utilizar un link a una sección propia de esta página">Enlace Anchor</a>
+                Podemos movernos dentro de este mismo documento utilizando el enlace Ancla con un ID específico
+                <b>href="#idElemento"</b><br>
 
-                </article>
-
-                <!-- Artículo de Center Div  -->
-                <article id="artCenterDiv">
-
-                    <h3>Centrar un DIV</h3>
-                    <p>Se sabe que centrar un div sin utilizar Flexbox puede ser una tarea muy difícilo para muchos
-                        desarrolladores y diseñadores. A continuación mostraremos algunas maneras de centrar elementos
-                        vertical y horizontalmente.</p>
-                    <img class="meme center-v center-h" src="https://pbs.twimg.com/media/EC7NlSNXsAEW4cw.jpg"
-                        alt="center div meme">
-                    <img class="meme center-v center-h"
-                        src="https://miro.medium.com/v2/resize:fit:651/1*rf4QAy4yYPdfuLsZ7NrHZA.jpeg" alt="center div meme">
-                    <img class="meme center-v center-h" src="https://pbs.twimg.com/media/ESvZjcOWoAICzn_.jpg"
-                        alt="center div meme">
-                    <img class="meme center-v center-h"
-                        src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Qd3B_lzhjVlhclb0tkWnTQ.jpeg"
-                        alt="center div meme">
-                    <img class="meme center-v center-h"
-                        src="https://programmerhumor.io/wp-content/uploads/2023/05/programmerhumor-io-databases-memes-backend-memes-1e883fa8146baf6.png"
-                        alt="center div meme">
-                    <img class="meme center-v center-h" src="https://i.imgur.com/Wy5c2Kb.jpg" alt="center div meme">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="width:33%;">
+                            frame 0<br>
+                            <iframe src="" frameborder="0"
+                                style="border:3px dashed #ef4444;height:200px;padding:30px 0 0 30px;"
+                                srcdoc="<a target='_top' href='https://cei.es'>Link con target top</a><br><a target='_parent' href='https://cei.es'>Link con target parent</a>"></iframe>
+                        </td>
+                        <td style="width:33%;">
+                            frame 1<br>
+                            <iframe src="" name="_frame1" frameborder="1"
+                                style="border:3px dashed #efec44; width:200px;height:200px; padding:10px; margin:10px;"></iframe>
+                        </td>
+                        <td style="width:33%;">
+                            frame 2<br>
+                            <iframe src="" name="_frame2" frameborder="1"
+                                style="width:200px;height:200px; padding:10px; margin:10px;"></iframe>
+                        </td>
+                    </tr>
+                </table>
 
 
 
-                    <h4>Centrar Horizontalmente</h4>
+            </article>
 
-                    Utilizando Margen Automático:
-                    <pre
-                        class="code"><span class="">&lt;div style="max-width:25%;margin: 0 auto;"&gt;Centered&lt;/div&gt;</span></pre>
+            <!-- Artículo de Center Div  -->
+            <article id="artCenterDiv">
 
-                    <div style="max-width:25%;margin: 0 auto; text-align:center;">
-                        <img src="img/profile_female.png" alt="Foto de Perfil" style="width:200px;">
-                        <div>María Laura</div>
-                    </div>
+                <h3>Centrar un DIV</h3>
+                <p>Se sabe que centrar un div sin utilizar Flexbox puede ser una tarea muy difícilo para muchos
+                    desarrolladores y diseñadores. A continuación mostraremos algunas maneras de centrar elementos
+                    vertical y horizontalmente.</p>
+                <img class="meme center-v center-h" src="https://pbs.twimg.com/media/EC7NlSNXsAEW4cw.jpg"
+                    alt="center div meme">
+                <img class="meme center-v center-h"
+                    src="https://miro.medium.com/v2/resize:fit:651/1*rf4QAy4yYPdfuLsZ7NrHZA.jpeg" alt="center div meme">
+                <img class="meme center-v center-h" src="https://pbs.twimg.com/media/ESvZjcOWoAICzn_.jpg"
+                    alt="center div meme">
+                <img class="meme center-v center-h"
+                    src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*Qd3B_lzhjVlhclb0tkWnTQ.jpeg"
+                    alt="center div meme">
+                <img class="meme center-v center-h"
+                    src="https://programmerhumor.io/wp-content/uploads/2023/05/programmerhumor-io-databases-memes-backend-memes-1e883fa8146baf6.png"
+                    alt="center div meme">
+                <img class="meme center-v center-h" src="https://i.imgur.com/Wy5c2Kb.jpg" alt="center div meme">
 
-                    Utilizando Inline-block:
-                    <pre
-                        class="code"><span class="">&lt;div style="text-align:center;"&gt;<br>  &lt;div style="display: inline-block;"&gt;Centered&lt;/div&gt;<br>&lt;/div&gt;</span></pre>
 
-                    <div style="text-align:center;">
-                        <img src="img/profile_female.png" alt="Foto de Perfil" style="width:200px;">
-                        <div>María Laura</div>
-                    </div>
 
-                    <h4>Centrado Vertical</h4>
-                    <pre
-                        class="code"><span class="">&lt;div style="vertical-align:middle;display:inline-block;"&gt;</span></pre>
+                <h4>Centrar Horizontalmente</h4>
 
-                    <style>
-                        #artCenterDiv .meme {
-                            width: 25vw;
-                            max-height: 350px;
-                        }
+                Utilizando Margen Automático:
+                <pre
+                    class="code"><span class="">&lt;div style="max-width:25%;margin: 0 auto;"&gt;Centered&lt;/div&gt;</span></pre>
 
-                        /* Centrado Vertical */
-                        #artCenterDiv .center-v {
-                            vertical-align: middle;
-                            display: inline-block;
-                        }
+                <div style="max-width:25%;margin: 0 auto; text-align:center;">
+                    <img src="img/profile_female.png" alt="Foto de Perfil" style="width:200px;">
+                    <div>María Laura</div>
+                </div>
 
-                        /* Centrado Horizontal  */
-                        #artCenterDiv .center-h {
-                            text-align: center;
-                        }
+                Utilizando Inline-block:
+                <pre
+                    class="code"><span class="">&lt;div style="text-align:center;"&gt;<br>  &lt;div style="display: inline-block;"&gt;Centered&lt;/div&gt;<br>&lt;/div&gt;</span></pre>
 
-                        /*
+                <div style="text-align:center;">
+                    <img src="img/profile_female.png" alt="Foto de Perfil" style="width:200px;">
+                    <div>María Laura</div>
+                </div>
+
+                <h4>Centrado Vertical</h4>
+                <pre
+                    class="code"><span class="">&lt;div style="vertical-align:middle;display:inline-block;"&gt;</span></pre>
+
+                <style>
+                    #artCenterDiv .meme {
+                        width: 25vw;
+                        max-height: 350px;
+                    }
+
+                    /* Centrado Vertical */
+                    #artCenterDiv .center-v {
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
+
+                    /* Centrado Horizontal  */
+                    #artCenterDiv .center-h {
+                        text-align: center;
+                    }
+
+                    /*
                         .all-center-rules {
                             /* Centrado horizontal  * /
                             text-align: center;
@@ -223,710 +235,899 @@
                             transform: translate(-50%, -50%);
                         }
                         */
-                    </style>
+                </style>
 
-                    <div class="center-h">
-                        <div class="center-v">
-                            <img src="img/profile_female.png" alt="Foto de Perfil" style="width:200px;">
-                        </div>
-                        <div class="center-v">María Laura</div>
+                <div class="center-h">
+                    <div class="center-v">
+                        <img src="img/profile_female.png" alt="Foto de Perfil" style="width:200px;">
                     </div>
+                    <div class="center-v">María Laura</div>
+                </div>
 
 
-                </article>
+            </article>
 
-                <!-- Artículo de Tablas -->
-                <article id="artTablas">
-                    <style>
-                        #tablaMascotas {
-                            margin: 10px auto;
-                            border-collapse: collapse;
-                            /* quitar borde entre celdas */
-                            border: 2px solid #333;
-                            width: 80%;
-                        }
+            <!-- Artículo de Tablas -->
+            <article id="artTablas">
+                <style>
+                    #tablaMascotas {
+                        margin: 10px auto;
+                        border-collapse: collapse;
+                        /* quitar borde entre celdas */
+                        border: 2px solid #333;
+                        width: 80%;
+                    }
 
-                        #tablaMascotas th,
-                        #tablaMascotas td {
-                            padding: 10px;
-                            text-align: left;
-                            border-bottom: 1px solid #ddd;
-                        }
+                    #tablaMascotas th,
+                    #tablaMascotas td {
+                        padding: 10px;
+                        text-align: left;
+                        border-bottom: 1px solid #ddd;
+                    }
 
-                        #tablaMascotas th {
-                            background-color: #333;
-                            color: #fff;
-                        }
-                    </style>
+                    #tablaMascotas th {
+                        background-color: #333;
+                        color: #fff;
+                    }
+                </style>
 
-                    <h1>Tablas</h1>
-                    <p>Podemos crear tablas en HTML y estilarlas con CSS. Los tags de las tablas se agrupan en cabeceras,
-                        contenido y pie. Se declaran primero las filas, y luego las celdas separadas en columnas.</p>
+                <h1>Tablas</h1>
+                <p>Podemos crear tablas en HTML y estilarlas con CSS. Los tags de las tablas se agrupan en cabeceras,
+                    contenido y pie. Se declaran primero las filas, y luego las celdas separadas en columnas.</p>
 
 
-                    <style>
-                        #tablaProps tr:nth-child(even) {
-                            background: #ddd
-                        }
+                <style>
+                    #tablaProps tr:nth-child(even) {
+                        background: #ddd
+                    }
 
-                        #tablaProps tr:nth-child(odd) {
-                            background: #fff
-                        }
-                    </style>
-                    <table id="tablaProps" style="border: 1px solid black; margin: auto; width: 70%;">
-                        <tbody>
-                            <tr>
-                                <th>Tag</th>
-                                <th>Descripción</th>
-                            </tr>
-                            <tr>
-                                <td><a href="">&lt;table&gt;</a></td>
-                                <td>Define una Tabla</td>
-                            </tr>
-                            <tr>
-                                <td><a href="">&lt;thead&gt;</a></td>
-                                <td>Agrupa el contenido de cabeceras de la tabla</td>
-                            </tr>
-                            <tr>
-                                <td><a href="">&lt;tbody&gt;</a></td>
-                                <td>Agrupa el contenido del cuerpo de la tabla</td>
-                            </tr>
-                            <tr>
-                                <td><a href="">&lt;tfoot&gt;</a></td>
-                                <td>Agrupa el contenido del Pié de la tabla</td>
-                            </tr>
-                            <tr>
-                                <td><a href="">&lt;th&gt;</a></td>
-                                <td>Define una Celda como cabecera</td>
-                            </tr>
-                            <tr>
-                                <td><a href="">&lt;tr&gt;</a></td>
-                                <td>Define una Fila de la tabla</td>
-                            </tr>
-                            <tr>
-                                <td><a href="">&lt;td&gt;</a></td>
-                                <td>Define una Celda de la tabla</td>
-                            </tr>
-                            <tr>
-                                <td>Atributo <a href="">colspan</a></td>
-                                <td>Define el ancho de una celda en cantidad de celdas a ocupar: <b>&lt;td colspan="2"
-                                        &gt;</b> ocupara 2 celdas de ancho.</td>
-                            </tr>
-                            <tr>
-                                <td>Otros atributos</td>
-                                <td>Se recomienda NO utilizar atributos estéticos de la tabla, en vez utilizar sus
-                                    alternativas en CSS. Algunos de los atributos a evitar son: <b>cellpadding, bgcolor,
-                                        border, cellspacing, width</b></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    #tablaProps tr:nth-child(odd) {
+                        background: #fff
+                    }
+                </style>
+                <table id="tablaProps" style="border: 1px solid black; margin: auto; width: 70%;">
+                    <tbody>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Descripción</th>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;table&gt;</a></td>
+                            <td>Define una Tabla</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;thead&gt;</a></td>
+                            <td>Agrupa el contenido de cabeceras de la tabla</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;tbody&gt;</a></td>
+                            <td>Agrupa el contenido del cuerpo de la tabla</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;tfoot&gt;</a></td>
+                            <td>Agrupa el contenido del Pié de la tabla</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;th&gt;</a></td>
+                            <td>Define una Celda como cabecera</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;tr&gt;</a></td>
+                            <td>Define una Fila de la tabla</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;td&gt;</a></td>
+                            <td>Define una Celda de la tabla</td>
+                        </tr>
+                        <tr>
+                            <td>Atributo <a href="">colspan</a></td>
+                            <td>Define el ancho de una celda en cantidad de celdas a ocupar: <b>&lt;td colspan="2"
+                                    &gt;</b> ocupara 2 celdas de ancho.</td>
+                        </tr>
+                        <tr>
+                            <td>Otros atributos</td>
+                            <td>Se recomienda NO utilizar atributos estéticos de la tabla, en vez utilizar sus
+                                alternativas en CSS. Algunos de los atributos a evitar son: <b>cellpadding, bgcolor,
+                                    border, cellspacing, width</b></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                    <table id="tablaMascotas">
-                        <thead>
-                            <tr>
-                                <th>Atributo</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Nombre</td>
-                                <td>Willy</td>
-                            </tr>
-                            <tr>
-                                <td>Especie</td>
-                                <td>Perro</td>
-                            </tr>
-                            <tr>
-                                <td>Raza</td>
-                                <td>Golden Retriever</td>
-                            </tr>
-                            <tr>
-                                <td>Edad</td>
-                                <td>3 años</td>
-                            </tr>
-                            <tr>
-                                <td>Sexo</td>
-                                <td>Macho</td>
-                            </tr>
-                            <tr>
-                                <td>Color</td>
-                                <td>Dorado</td>
-                            </tr>
-                            <tr>
-                                <td>Actividades Favoritas</td>
-                                <td>
-                                    <ol>
-                                        <li>Correr en el parque</li>
-                                        <li>Perseguir animales</li>
-                                        <li>Buscar la pelota</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Comida Favorita</td>
-                                <td>
-                                    <ul>
-                                        <li>Pescado</li>
-                                        <li>Pollo</li>
-                                        <li>Cerdo</li>
-                                        <li>Vegetales</li>
-                                        <li>Bolsas de Basura</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="2" style="text-align:center;">Pié de mi Tabla - Copyright 2023</td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                <table id="tablaMascotas">
+                    <thead>
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Willy</td>
+                        </tr>
+                        <tr>
+                            <td>Especie</td>
+                            <td>Perro</td>
+                        </tr>
+                        <tr>
+                            <td>Raza</td>
+                            <td>Golden Retriever</td>
+                        </tr>
+                        <tr>
+                            <td>Edad</td>
+                            <td>3 años</td>
+                        </tr>
+                        <tr>
+                            <td>Sexo</td>
+                            <td>Macho</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>Dorado</td>
+                        </tr>
+                        <tr>
+                            <td>Actividades Favoritas</td>
+                            <td>
+                                <ol>
+                                    <li>Correr en el parque</li>
+                                    <li>Perseguir animales</li>
+                                    <li>Buscar la pelota</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Comida Favorita</td>
+                            <td>
+                                <ul>
+                                    <li>Pescado</li>
+                                    <li>Pollo</li>
+                                    <li>Cerdo</li>
+                                    <li>Vegetales</li>
+                                    <li>Bolsas de Basura</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" style="text-align:center;">Pié de mi Tabla - Copyright 2023</td>
+                        </tr>
+                    </tfoot>
+                </table>
 
-                </article>
+            </article>
 
-                <!-- Artículo de Layout -->
-                <article id="artLayout">
+            <!-- Artículo de Layout -->
+            <article id="artLayout">
 
-                    <h3>Layout Tags</h3>
-                    <p>Las Tags de Disposición/Layout nos permiten acomodar nuestros elementos en la web. Segmentando
-                        nuestrá página en partes, es mas fácil identificar y desarrollar la misma.</p>
+                <h3>Layout Tags</h3>
+                <p>Las Tags de Disposición/Layout nos permiten acomodar nuestros elementos en la web. Segmentando
+                    nuestrá página en partes, es mas fácil identificar y desarrollar la misma.</p>
 
-                    <div style="text-align:center;">
-                        <img src="img/layout.png" alt="">
-                    </div>
+                <div style="text-align:center;">
+                    <img src="img/layout.png" alt="">
+                </div>
 
-                    <style>
-                        #tablaLayout tr:nth-child(even) {
-                            background: #ddd
-                        }
+                <style>
+                    #tablaLayout tr:nth-child(even) {
+                        background: #ddd
+                    }
 
-                        #tablaLayout tr:nth-child(odd) {
-                            background: #fff
-                        }
-                    </style>
-                    <table id="tablaLayout" style="border: 1px solid black; margin: auto; width: 70%;">
-                        <tbody>
-                            <tr class="bg-light">
-                                <th style="width:120px">Etiqueta</th>
-                                <th style="">Description</th>
-                            </tr>
-                            <tr>
-                                <td><a class="code-link" href="#">&lt;header&gt;</a></td>
-                                <td>Defines a header section on a page or a section of a page</td>
-                            </tr>
-                            <tr>
-                                <td><a class="code-link" href="#">&lt;main&gt;</a></td>
-                                <td>Creates a container for the main content of the page</td>
-                            </tr>
-                            <tr>
-                                <td><a class="code-link" href="#">&lt;footer&gt;</a></td>
-                                <td>Defines a footer section on a page or a section of a page</td>
-                            </tr>
-                            <tr>
-                                <td><a class="code-link" href="#">&lt;nav&gt;</a></td>
-                                <td>Creates a container for navigation links</td>
-                            </tr>
-                            <tr>
-                                <td><a class="code-link" href="#">&lt;aside&gt;</a></td>
-                                <td>Creates a content area that is related to the primary content on a page</td>
-                            </tr>
-                            <tr>
-                                <td><a class="code-link" href="#">&lt;article&gt;</a></td>
-                                <td>Defines a container for independent and self contained text</td>
-                            </tr>
-                            <tr>
-                                <td><a class="code-link" href="#">&lt;section&gt;</a></td>
-                                <td>Defines a piece of content that can stand on its own</td>
-                            </tr>
-                            <tr>
-                                <td><a class="code-link" href="#">&lt;div&gt;</a></td>
-                                <td>Creates a division or section on a page</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    #tablaLayout tr:nth-child(odd) {
+                        background: #fff
+                    }
+                </style>
+                <table id="tablaLayout" style="border: 1px solid black; margin: auto; width: 70%;">
+                    <tbody>
+                        <tr class="bg-light">
+                            <th style="width:120px">Etiqueta</th>
+                            <th style="">Description</th>
+                        </tr>
+                        <tr>
+                            <td><a class="code-link" href="#">&lt;header&gt;</a></td>
+                            <td>Defines a header section on a page or a section of a page</td>
+                        </tr>
+                        <tr>
+                            <td><a class="code-link" href="#">&lt;main&gt;</a></td>
+                            <td>Creates a container for the main content of the page</td>
+                        </tr>
+                        <tr>
+                            <td><a class="code-link" href="#">&lt;footer&gt;</a></td>
+                            <td>Defines a footer section on a page or a section of a page</td>
+                        </tr>
+                        <tr>
+                            <td><a class="code-link" href="#">&lt;nav&gt;</a></td>
+                            <td>Creates a container for navigation links</td>
+                        </tr>
+                        <tr>
+                            <td><a class="code-link" href="#">&lt;aside&gt;</a></td>
+                            <td>Creates a content area that is related to the primary content on a page</td>
+                        </tr>
+                        <tr>
+                            <td><a class="code-link" href="#">&lt;article&gt;</a></td>
+                            <td>Defines a container for independent and self contained text</td>
+                        </tr>
+                        <tr>
+                            <td><a class="code-link" href="#">&lt;section&gt;</a></td>
+                            <td>Defines a piece of content that can stand on its own</td>
+                        </tr>
+                        <tr>
+                            <td><a class="code-link" href="#">&lt;div&gt;</a></td>
+                            <td>Creates a division or section on a page</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                    <br>
-                    Fuente para mas información: <a href="https://www.dofactory.com/html/tag-groups/layout">tag-groups
-                        Layouts</a>
+                <br>
+                Fuente para mas información: <a href="https://www.dofactory.com/html/tag-groups/layout">tag-groups
+                    Layouts</a>
 
-                </article>
+            </article>
 
-                <!-- Artículo de Colores -->
-                <article id="artColores">
-                    <h2>Colores</h2>
-                    <p>Agregar color a su texto HTML es fácil! En este breve tutorial veremos cómo cambiar el color de tu
-                        texto HTML con color en Hex los códigos, nombres de colores HTML, RGB y HSL valores.</p>
+            <!-- Artículo de Colores -->
+            <article id="artColores">
+                <h2>Colores</h2>
+                <p>Agregar color a su texto HTML es fácil! En este breve tutorial veremos cómo cambiar el color de tu
+                    texto HTML con color en Hex los códigos, nombres de colores HTML, RGB y HSL valores.</p>
 
-                    <h3>Color del texto con códigos de color HEX</h3>
-                    <p>La forma más común de texto HTML coloración es mediante el uso de códigos de color hexadecimal
-                        (código Hex para abreviar). Sólo tienes que añadir un atributo de estilo al elemento de texto que
-                        desea de color - un párrafo en el siguiente ejemplo - y el uso de la propiedad de color con su
-                        codificación Hex.</p>
-                    <!-- Método viejo de mostrar código, no se puede hacer mix de html + texto.
+                <h3>Color del texto con códigos de color HEX</h3>
+                <p>La forma más común de texto HTML coloración es mediante el uso de códigos de color hexadecimal
+                    (código Hex para abreviar). Sólo tienes que añadir un atributo de estilo al elemento de texto que
+                    desea de color - un párrafo en el siguiente ejemplo - y el uso de la propiedad de color con su
+                    codificación Hex.</p>
+                <!-- Método viejo de mostrar código, no se puede hacer mix de html + texto.
                     
                     <xmp>
                         <p style="color:#FF0000";>Red paragraph text</p>
                     </xmp> -->
 
-                    <pre class="code">
+                <pre class="code">
                         <code>
                             &lt;p style="color:#FF0000;"&gt;<span style="color: #ff0000">Red paragraph text</span>&lt;/p&gt;</code>
                     </pre>
 
-                    <h3>Color del texto con nombres de colores HTML</h3>
-                    <p>Otra forma de color texto de su sitio web es mediante un nombre de color HTML. El código HTML es
-                        similar, simplemente reemplace el código Hex en el paso anterior con el nombre del color que desee
-                        utilizar (rojo en nuestro ejemplo). Hay 140 colores para elegir.</p>
+                <h3>Color del texto con nombres de colores HTML</h3>
+                <p>Otra forma de color texto de su sitio web es mediante un nombre de color HTML. El código HTML es
+                    similar, simplemente reemplace el código Hex en el paso anterior con el nombre del color que desee
+                    utilizar (rojo en nuestro ejemplo). Hay 140 colores para elegir.</p>
 
-                    <pre class="code">
+                <pre class="code">
                         <code>
                             &lt;p style="color:blue;"&gt;<span style="color: blue">Blue paragraph text</span>&lt;/p&gt;</code>
                     </pre>
 
-                    <h3>Color del texto utilizando los valores de los colores RGB</h3>
-                    <p>Usando valores RGB para algunos genera rabia, pero es tan fácil como los códigos Hex o los nombres de
-                        los colores. Introduzca los valores de RGB en el rgb() parámetro después la propiedad color.</p>
+                <h3>Color del texto utilizando los valores de los colores RGB</h3>
+                <p>Usando valores RGB para algunos genera rabia, pero es tan fácil como los códigos Hex o los nombres de
+                    los colores. Introduzca los valores de RGB en el rgb() parámetro después la propiedad color.</p>
 
-                    <pre class="code">
+                <pre class="code">
                         <code>
                             &lt;p style="color:rgb(0,255,0);"&gt;<span style="color: rgb(0,255,0)">Green paragraph text</span>&lt;/p&gt;</code>
                     </pre>
 
-                    <p>Cuando se utiliza un valor RGB en su sitio web, también puede especificar la opacidad. En lugar de
-                        rgb() utilizar rgba() - la a es para alfa, el canal del color que controla la opacidad, y después de
-                        su tres valores de color añadir un cuarto de opacidad, en una escala de 0 - 1 (0 para totalmente
-                        transparente, 1 para completamente opaco).</p>
-                    <pre class="code">
+                <p>Cuando se utiliza un valor RGB en su sitio web, también puede especificar la opacidad. En lugar de
+                    rgb() utilizar rgba() - la a es para alfa, el canal del color que controla la opacidad, y después de
+                    su tres valores de color añadir un cuarto de opacidad, en una escala de 0 - 1 (0 para totalmente
+                    transparente, 1 para completamente opaco).</p>
+                <pre class="code">
                         <code>
                             &lt;p style="color:rgba(0,0,0,0.5);"&gt;<span style="color: rgba(255,0,0, 0.5)">Opacity 50% of Red</span>&lt;/p&gt;</code>
                     </pre>
 
-                    <h3>Color del texto utilizando los valores de los colores HSL (Hue, Saturation, Lightness)</h3>
-                    <p>Un cuarto método para añadir color HSL es mediante valores. Similar a la sintaxis que se describe
-                        arriba RGB, HSL utiliza la hsl() prefijo y tres valores de tono, saturación y luminosidad. El tono
-                        es representado en una escala de 0 a 360, mientras que saturación y luminosidad son un porcentaje
-                        entre el 0% y el 100%.</p>
+                <h3>Color del texto utilizando los valores de los colores HSL (Hue, Saturation, Lightness)</h3>
+                <p>Un cuarto método para añadir color HSL es mediante valores. Similar a la sintaxis que se describe
+                    arriba RGB, HSL utiliza la hsl() prefijo y tres valores de tono, saturación y luminosidad. El tono
+                    es representado en una escala de 0 a 360, mientras que saturación y luminosidad son un porcentaje
+                    entre el 0% y el 100%.</p>
 
-                    <pre class="code">
+                <pre class="code">
                         <code>
                             &lt;p style="color:hsl(0,100%,50%);"&gt;<span style="color:hsl(0,100%,50%);">Red paragraph text</span>&lt;/p&gt;</code>
                     </pre>
 
-                    <p>Y como con RGB también se le puede agregar un 4to parámetro para la opacidad utilizando hsla()</p>
-                    <pre class="code">
+                <p>Y como con RGB también se le puede agregar un 4to parámetro para la opacidad utilizando hsla()</p>
+                <pre class="code">
                         <code>
                             &lt;p style="color:hsla(0,100%,50%, 0.5);"&gt;<span style="color:hsla(0,100%,50%, 0.5);">Red paragraph text</span>&lt;/p&gt;</code>
                     </pre>
 
-                    En conclusión, hay muchas maneras de mostrar los colores en nuestra web, y dependiendo el caso podremos
-                    utilizar el que prefiramos.<br>
-                    Este es un <a href="https://htmlcolorcodes.com/es/" title="Selector de Color" target="_blank">Selector
-                        de Color</a> web que nos mostrará el mismo color en todas sus formas. <br>
-                    También tenemos este selector y explicación de <a
-                        href="https://htmlcolorcodes.com/es/selector-de-color/" title="Selector de colores complementarios"
-                        target="_blank">Armonias de Colores</a> para utilizar en nuestros proyectos.
+                En conclusión, hay muchas maneras de mostrar los colores en nuestra web, y dependiendo el caso podremos
+                utilizar el que prefiramos.<br>
+                Este es un <a href="https://htmlcolorcodes.com/es/" title="Selector de Color" target="_blank">Selector
+                    de Color</a> web que nos mostrará el mismo color en todas sus formas. <br>
+                También tenemos este selector y explicación de <a
+                    href="https://htmlcolorcodes.com/es/selector-de-color/" title="Selector de colores complementarios"
+                    target="_blank">Armonias de Colores</a> para utilizar en nuestros proyectos.
 
+            </article>
+
+            <!-- Articulo Formularios -->
+            <article id="artFormularios" style="display:none;">
+                <h1>Formularios</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam
+                    inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit.
+                    Culpa sunt impedit repellat.
+                    Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo,
+                    nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore
+                    totam neque iste.</p>
+
+            </article>
+
+            <!-- Articulo Flexbox -->
+            <article id="artFlexbox">
+
+                <style>
+                    #artFlexbox img {
+                        max-width: 70%;
+                        align-self:center;
+                        display: flex;
+
+                    }
+                    #artFlexbox article{
+                        display:flex;
+                        flex-direction: column;
+                        /* margin-left:auto;
+                        margin-right:auto;
+                        text-align:center; */
+                    }
+                </style>
+                <h1>Flexbox</h1>
+                <p>Antes del módulo Flexbox Layout, había cuatro modos de diseño:<br>
+
+                    <ul>
+                        <Li>Block, para secciones de una página web</Li>
+                        <Li>Inline, para texto</Li>
+                        <Li>Table, para datos de tablas bidimensionales</Li>
+                        <Li>Flotacion/Posicionamiento, para la posición explícita de un elemento</Li>
+                    </ul>
+
+                    <span>
+                        El módulo de diseño de <b>FlexBox</b> facilita el diseño de una estructura de diseño flexible y
+                        responsiva sin utilizar flotación ni posicionamiento.
+
+                        <br>
+                        <h4>Links de interés:</h4>
+
+                        Juego para probar tus habilidades de FlexBox: <a href="https://flexboxfroggy.com/#es" target="_blank">FlexBox Froggy</a>
+
+                    </span>
+                </p>
+
+                <article id="flex-direction">
+                    <h3>Flex-Direction</h3>
+                    <p>Dirección de la fila. Define cual va a ser el eje principal para otras propiedades como
+                        justify-content/algin items.</p>
+                    <pre class="code">
+                        <code>
+    .container {
+        display: flex;
+        flex-direction: row | row-reverse | column | column-reverse;
+    }
+                        </code>
+                    </pre>
+                    <img src="img/flexbox/flex-direction.svg" alt="">
                 </article>
 
-                 <!-- Articulo Formularios -->
-                 <article id="artFormularios">
-                    <h1>Formularios</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam
-                        inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit.
-                        Culpa sunt impedit repellat.
-                        Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo,
-                        nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore
-                        totam neque iste.</p>
-
-                </article>
-
-                 <!-- Articulo Flexbox -->
-                 <article id="artFlexbox">
-                    <h1>Flexbox</h1>
-                    <p>Antes del módulo Flexbox Layout, había cuatro modos de diseño:<br>
-
-                        <ul>
-                            <Li>Block, para secciones de una página web</Li>
-                            <Li>Inline, para texto</Li>
-                            <Li>Table, para datos de tablas bidimensionales</Li>
-                            <Li>Flotacion/Posicionamiento, para la posición explícita de un elemento</Li>
-                        </ul>
-                    
-                        El módulo de diseño de <b>FlexBox</b> facilita el diseño de una estructura de diseño flexible y responsiva sin utilizar flotación ni posicionamiento.
+                <article id="flex-wrap">
+                    <h3>Flex-wrap</h3>
+                    <p>Reordena los elementos llevandolos a la sigueinte linea en caso de super el espacio en la linea.
                     </p>
-
-                    <article>
-                        Dirección de la fila: Row | Column
-                        <pre class="code">
+                    <pre class="code">
                             <code>
-                                .container {
-                                    display: flex;
-                                    flex-direction: row | row-reverse | column | column-reverse;
-                                  }
-                                </code>
+    .container {
+        flex-wrap: nowrap; /* por defecto, no realiza Wrap */
+        flex-wrap: wrap; /* Activa funcionalida de Wrap */
+        flex-wrap: wrap-reverse; /* Invierte el orden del Wrap */
+    }
+                            </code>
                         </pre>
-                        <img src="img/flexbox/flex-direction.svg" alt="">
-                    </article>
+                    <img src="img/flexbox/flex-wrap.svg" alt="">
+                </article>
 
-                    <article>
-                        Flex Wrap: Reordena los elementos llevandolos a la sigueinte linea en caso de super el espacio en la linea.
-                        <pre class="code">
-                            <code>
-                                .container {
-                                    flex-wrap: nowrap; /* por defecto, no realiza Wrap */
-                                    flex-wrap: wrap; /* Activa funcionalida de Wrap */
-                                    flex-wrap: wrap-reverse; /* Invierte el orden del Wrap */
-                                  }
-                                </code>
-                        </pre>
-                        <img src="img/flexbox/flex-wrap.svg" alt="">
-                    </article>
+                <article id="flex-justify-content">
+                    <h3>Justify-Content</h3>
+                    <p>Ordena los elementos en el eje horizontal (con flex-direction: row) o vertical (con
+                        flex-direction: column)</p>
+                    <pre class="code">
+                        <code>
+    .container {
+        justify-content: flex-start; /* por defecto, alinea los elementos a la izquierda (o arriba en flex-direction: column) */
+        justify-content: flex-end; /* alinea los elementos a la derecha (o abajo en flex-direction: column)*/
+        justify-content: center; /* alinea los elementos en el centro de la fila / columna */
+        justify-content: space-between; /* agrega el máximo espacio posible entre elementos  */
+        justify-content: space-around; /* agrega espacio entre elementos y a los lados  */
+        justify-content: space-evenly; /* agrega el mismo espacio entre elementos y a los lados  */
+    }
+                        </code>
+                    </pre>
+                    <img src="img/flexbox/justify-content.svg" alt="">
+                </article>
 
-                    <article>
-                        Justify-Content: Ordena los elementos en el eje horizontal
-                        <pre class="code">
-                            <code>
-                                .container {
-                                    flex-wrap: nowrap; /* por defecto, no realiza Wrap */
-                                    flex-wrap: wrap; /* Activa funcionalida de Wrap */
-                                    flex-wrap: wrap-reverse; /* Invierte el orden del Wrap */
-                                  }
-                                </code>
-                        </pre>
-                        <img src="img/flexbox/justify-content.svg" alt="">
-                    </article>
-                    
-
+                <article id="flex-align-items">
+                    <h3>Align-Items</h3>
+                    <p>Ordena los elementos en su eje vertical</p>
+                    <pre class="code">
+                        <code>
+    .container {
+        align-items: flex-start; /* por defecto. Alinea los elementos en la parte superior de la caja flex */
+        align-items: flex-end; /* alinea los elementos en la parte inferior de la caja flex */
+        align-items: center; /* alinea los elementos en el centro de la caja */
+        align-items: stretch; /* extiende los elementos para que ocupen el mayor espacio posible verticalmente  */
+        align-items: baseline; /* alinea los elementos centrando su texto central  */
+    }
+                        </code>
+                    </pre>
                     <img src="img/flexbox/align-items.svg" alt="">
+                </article>
+
+                <article id="flex-align-self">
+                    <h3>Align-self</h3>
+                    Permite modificar individualmente el comportamiento de uno o más de los elementos hijos del
+                    contenedor flex cambiando su comportamiento previamente definido.
                     <img src="img/flexbox/align-self.svg" alt="">
+                </article>
+
+
+                <article id="flex-grow">
+                    <h3>Flex-grow</h3>
+                    <p>Especifica el espacio que ocuparan los elementos respecto a sus hermanos en el mismo contenedor.
+                        Por defecto es 0, y si se define un valor, el espacio restante se repartirá entre los elementos
+                        de manera proporcional a su valor de flex-grow.</p>
+
+                    <pre class="code">
+                            <code>
+    /* Ejemplo 1 */
+    #item1 { flex-grow: 1; /* ocupa 1/3 del espacio restante */ }
+    #item2 { flex-grow: 1; /* ocupa 1/3 del espacio restante */ }
+    #item3 { flex-grow: 1; /* ocupa 1/3 del espacio restante */ }
+
+    /* Ejemplo 2 */
+    #item1 { flex-grow: 1; /* ocupa 1/4 del espacio restante */ }
+    #item2 { flex-grow: 2; /* ocupa 2/4 del espacio restante */ }
+    #item3 { flex-grow: 1; /* ocupa 1/4 del espacio restante */ }
+                            </code>
+                        </pre>
                     <img src="img/flexbox/flex-grow.svg" alt="">
+                </article>
+
+                <article id="flex-align-content">
+                    <h3>Align-content</h3>
+                    <p>En contenedores multilinea especifica la distribución de los elementos Flex. No tiene influencia
+                        en los elementos de una única fila.</p>
+
                     <img src="img/flexbox/align-content.svg" alt="">
-                    <img src="" alt="">
-
                 </article>
 
-                 <!-- Articulo X -->
-                 <article id="artXXXX" style="display:none;">
-                    <h1>Articulo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam
-                        inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit.
-                        Culpa sunt impedit repellat.
-                        Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo,
-                        nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore
-                        totam neque iste.</p>
-
-                </article>
-
-
-                <!-- Selectores -->
-                <!-- <article id="artSelectores">
-                    <h1>Selectores mediante ID y Clase</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit. Culpa sunt impedit repellat.
-                    Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo, nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore totam neque iste.</p>
-                </article> -->
+            </article>
 
 
 
+            <!-- Selectores -->
+            <article id="artSelectores">
+                <style>
+                    #artSelectores li {
+                        margin: 10px;
+                    }
+                </style>
+                <h1>Selectores mediante ID y Clase</h1>
 
-                <h1 style="vertical-align: bottom;display: inline-block; margin-bottom:0px;">Bloques HTML</h1>
-                <small style="margin-left: 10px; vertical-align: bottom;display: inline-block;">(En desarrollo)</small>
+                <ul>
+                    <li>Selector universal: <b>*</b></li>
+                    <li>Selector de elementos por etiqueta, puede ser cualquier elemento HTML, ejemplo: <b> div | img | a |
+                        h3</b></li>
+                    <li>Selector de elementos por ID: <b>#id-elemento</b></li>
+                    <li>Selector de elementos por clases: <b>.nombre-clase</b></li>
+                    <li>Selectores compuestos: <b>p.prueba</b> selecciona SOLO los párrafos que tengan la clase <b>prueba</b>
+                        ignorando los otros elementos <b>(h2, div, etc...)</b> que puedan tenerla.</li>
+                    <li>Selector jerárquico, indica qué afectará al elemento más a la derecha, siempre que se cumpla la
+                        jerarquía de la izquierda, en el ejemplo esto afectará a los párrafos dentro de un elemento con
+                        la clase “prueba”: <b>.prueba p</b></li>
+                    <li>Estos pueden tener todos los niveles necesarios: <b>.prueba p a</b> (afectará a los enlaces que estén
+                        dentro de párrafos, siempre que estos estén dentro de un elemento con la clase “prueba”).</li>
+                </ul>
+
+                <h4>Pseudo-selectores</h4>
+                <p>Pseudo-selectores, son selectores que permiten hacer selecciones más precisas, basadas en estados, posiciones y otras características, los reconocemos porque pueden ser casi cualquiera de los selectores arriba mencionados seguidos (sin espacio) de dos puntos ":" y el pseudo-selector.</p>
+
+
+                <ul>
+                    <li><b>p:first-child</b> selecciona todos los párrafos que sean el primer hijo de un elemento.</li>
+                    <li><b>article:last-child </b>selecciona todos los elementos article que sean el último hijo de un elemento.</li>
+                    <li><b>li:nth-child(n)</b> selecciona todos los li que sean el n hijo de un elemento, este pseudo-selector tiene algunas posibilidades especiales como:<br>
+                        <ul>
+                            <li><b>section:nth-child(odd)</b> selecciona todas las secciones que sean hijas impares (1,3,5,...) de un elemento.</li>
+                            <li><b>section:nth-child(even)</b> selecciona todas las secciones que sean hijas pares (2,4,6,...) de un elemento.</li>
+                        </ul>
+                    <li><b>p:nth-of-type(2)</b> selecciona el segundo hijo del tipo párrafo.</li>
+                    <li><b>li:nth-child(3n+2)</b> permite seleccionar utilizando una fórmula (xn+offset) en donde x es el intervalo y offset es el desfase (comenzando en 1), en el ejemplo quedarían seleccionados cada tres li empezando por el segundo(2,5,8,11,...).</li>    
+                    <li><b>a:hover</b> selecciona todos los enlaces siempre y cuando el cursor esté sobre ellos (mouse over).</li>
+                </ul>
+
+                <style>
+                    section {background: gray; margin:5px;  padding:5px; }
+                    section h1:first-child { color: green; }
+                    section *:first-child { color: yellow; }
+                    section p:nth-child(2) { color: red; }
+                    section p:nth-of-type(2) { color: blue; }
+                </style>
+
+
+                <h4>Ejemplo de examen:</h4>
+                <p> Del siguiente código interpretar las siguiente reglas CSS y piensa como quedará cada item:</p>
+                <code>
+                    <pre class="code">
+                        section h1:first-child { color: green; }
+                        section *:first-child { color: yellow; }
+                        section p:nth-child(2) { color: red; }
+                        section p:nth-of-type(2) { color: blue; }
+
+                        &lt;section&gt;
+                            &lt;span&gt;Primer Hijo&lt;/span&gt;
+                            &lt;h1&gt;Segundo Hijo&lt;/h1&gt;
+                            &lt;p&gt;Tercer Hijo&lt;/p&gt;
+                            &lt;p&gt;Cuarto Hijo&lt;/p&gt;
+                        &lt;/section&gt;
+                    </pre>
+                </code>
+
+
+                <div style="border: dashed black; padding:10px; margin:10px;">
+                 
+                    <p>A continuación tenemos un HTML oculto, puedes inspeccionar el elemento y ver como quedó cada item del ejemplo anterior:</p>
+                    <section style="visibility:hidden;">
+                        <span>Primer Hijo</span>
+                        <h1>Segundo Hijo</h1>
+                        <p>Tercer Hijo</p>
+                        <p>Cuarto Hijo</p>
+                    </section>
+                </div>
+
+                <p>Se pueden utilizar varios selectores en la misma regla, separándolos con coma (,) ejemplo:</p>
+                <code>
+                    <pre  class="code">
+            h1,h3,p{
+                /* esta regla afectará a los h1, h3 y p */
+            }
+                    </pre>
+                </code>
+
+                <p>También se pueden combinar para crear selecciones muy específicas, ejemplo:</p>
+                <code>
+                    <pre  class="code">
+            article p.prueba:last-child{
+                /* esta regla afectará a todos los párrafos con la clase prueba, que además sean el últi-
+                mo hijo de un elemento article */
+            }
+                    </pre>
+                </code>
+
+                <h4>Pseudo-Elementos</h4>
+                
+                <p>Son elementos inline que podemos crear desde el CSS para que se añadan antes o después del contenido de un elemento, los reconocemos porque después del selector tienen un par de dos puntos (::) ejemplo:</p>
+                
+                <ul>
+                    <li><b>li::before</b> crea un elemento antes del contenido de todos los li</li>
+                    <li><b>li::after</b> crea un elemento después del contenido de todos los li</li>
+                </ul>
+
+                <p>En ambos casos, la regla necesita la propiedad <b>content</b>, en la cual va el “contenido” del pseudo-elemento. Estos elementos fueron creados con la finalidad de añadir segmentos inline a contenidos ya existentes, sin embargo ofrecen muchas posibilidades creativas.<br></p>
+                
+            </article>
+
+
+
+            <!-- Articulo X -->
+            <article id="artXXXX" style="display:none;">
+                <h1>Articulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam
+                    inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit.
+                    Culpa sunt impedit repellat.
+                    Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo,
+                    nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore
+                    totam neque iste.</p>
+
+            </article>
+
+
+            <h1 style="vertical-align: bottom;display: inline-block; margin-bottom:0px;">Bloques HTML</h1>
+            <small style="margin-left: 10px; vertical-align: bottom;display: inline-block;">(En desarrollo)</small>
+            <hr>
+            <!-- Articulo Navbars -->
+            <article id="artNavbars">
+                <h1>NavBars</h1>
+
+                <p>Este primer ejemplo nos muestra como crear una barra lateral</p>
+                <style>
+                    #navbar1 {
+                        padding: 0;
+                        background-color: #333;
+                        width: 150px;
+                    }
+
+                    #navbar1 li {
+                        display: inline;
+                        /* quita el formato de "display:list-item" por defecto de los <li> */
+
+                    }
+
+                    #navbar1 li a {
+                        display: block;
+                        /* sobreescribo "display:inline" por defecto de los <a> */
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        /* quita el subrayado por defecto de los <a> */
+                    }
+
+                    #navbar1 li a:hover {
+                        background-color: #555;
+                    }
+                </style>
+
+                <ul id="navbar1">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+
+
                 <hr>
-                <!-- Articulo Navbars -->
-                <article id="artNavbars">
-                    <h1>NavBars</h1>
-
-                    <p>Este primer ejemplo nos muestra como crear una barra lateral</p>
-                    <style>
-                        #navbar1 {
-                            padding: 0;
-                            background-color: #333;
-                            width: 150px;
-                        }
-
-                        #navbar1 li {
-                            display: inline;
-                            /* quita el formato de "display:list-item" por defecto de los <li> */
-
-                        }
-
-                        #navbar1 li a {
-                            display: block;
-                            /* sobreescribo "display:inline" por defecto de los <a> */
-                            color: white;
-                            text-align: center;
-                            padding: 14px 16px;
-                            text-decoration: none;
-                            /* quita el subrayado por defecto de los <a> */
-                        }
-
-                        #navbar1 li a:hover {
-                            background-color: #555;
-                        }
-                    </style>
-
-                    <ul id="navbar1">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Acerca de</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
 
 
-                    <hr>
+                <p>Similar al anterior pero para mostrarse de manera Vertical</p>
+                <style>
+                    #navbar2 {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #333;
+                        height: 46px;
+                    }
+
+                    #navbar2 li {
+                        float: left;
+                    }
+
+                    #navbar2 li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+
+                    #navbar2 li:last-child::after {
+                        content: "";
+                    }
+
+                    #navbar2 li a:hover {
+                        background-color: #555;
+                    }
+                </style>
+                <ul id="navbar2">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
 
 
-                    <p>Similar al anterior pero para mostrarse de manera Vertical</p>
-                    <style>
-                        #navbar2 {
-                            list-style-type: none;
-                            margin: 0;
-                            padding: 0;
-                            background-color: #333;
-                            height: 46px;
-                        }
-
-                        #navbar2 li {
-                            float: left;
-                        }
-
-                        #navbar2 li a {
-                            display: block;
-                            color: white;
-                            text-align: center;
-                            padding: 14px 16px;
-                            text-decoration: none;
-                        }
-
-                        #navbar2 li:last-child::after {
-                            content: "";
-                        }
-
-                        #navbar2 li a:hover {
-                            background-color: #555;
-                        }
-                    </style>
-                    <ul id="navbar2">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Acerca de</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
+                <hr>
 
 
-                    <hr>
+                <p>En el siguiente ejemplo agregaremos la opción desplegable <b>Servicios</b> el cual extenderá el menú
+                    hacia abajo para incluir mas opciones con la opción CSS de <b>a:hover</b></p>
 
+                <style>
+                    #navbar3 {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #333;
+                        height: 46px;
+                    }
 
-                    <p>En el siguiente ejemplo agregaremos la opción desplegable <b>Servicios</b> el cual extenderá el menú
-                        hacia abajo para incluir mas opciones con la opción CSS de <b>a:hover</b></p>
+                    #navbar3 li {
+                        float: left;
+                    }
 
-                    <style>
-                        #navbar3 {
-                            list-style-type: none;
-                            margin: 0;
-                            padding: 0;
-                            background-color: #333;
-                            height: 46px;
-                        }
+                    #navbar3 li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
 
-                        #navbar3 li {
-                            float: left;
-                        }
+                    #navbar3 li a:hover {
+                        background-color: #555;
+                    }
 
-                        #navbar3 li a {
-                            display: block;
-                            color: white;
-                            text-align: center;
-                            padding: 14px 16px;
-                            text-decoration: none;
-                        }
+                    #navbar3 .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #333;
+                        min-width: 160px;
+                    }
 
-                        #navbar3 li a:hover {
-                            background-color: #555;
-                        }
+                    #navbar3 li:hover .dropdown-content {
+                        display: block;
+                    }
+                </style>
 
-                        #navbar3 .dropdown-content {
-                            display: none;
-                            position: absolute;
-                            background-color: #333;
-                            min-width: 160px;
-                        }
-
-                        #navbar3 li:hover .dropdown-content {
-                            display: block;
-                        }
-                    </style>
-
-                    <ul id="navbar3">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Acerca de</a></li>
-                        <li class="dropdown">
-                            <a href="#">Servicios</a>
-                            <div class="dropdown-content">
-                                <a href="#">Diseño web</a>
-                                <a href="#">Desarrollo web</a>
-                                <a href="#">Marketing en línea</a>
-                            </div>
-                        </li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-
-                    <hr>
-
-
-                    <p>Utilizaremos las propiedades <b>float:right</b> y <b>float:left</b> para empujar los elementos hacia
-                        la izquierda y derecha</p>
-                    <style>
-                        #navbar4 {
-                            list-style-type: none;
-                            margin: 0;
-                            padding: 0;
-                            background-color: #333;
-                            overflow: hidden;
-                        }
-
-                        #navbar4 li {
-                            float: left;
-                        }
-
-                        #navbar4 li a {
-                            display: block;
-                            color: white;
-                            text-align: center;
-                            padding: 14px 16px;
-                            text-decoration: none;
-                        }
-
-                        #navbar4 li a:hover {
-                            background-color: #555;
-                        }
-
-                        #navbar4 .logo {
-                            float: left;
-                        }
-
-                        #navbar4 .logo span {
-                            vertical-align: middle;
-                            display: inline-block;
-                            margin-left: 10px;
-                            font-size: larger;
-                        }
-
-                        #navbar4 .logo img {
-                            filter: drop-shadow(0 0 2px white);
-                            width: 40px;
-                            height: 40px;
-                            vertical-align: middle;
-                            display: inline-block;
-                        }
-
-                        #navbar4 .profile-image {
-                            float: right;
-                        }
-
-                        #navbar4 .profile-image img {
-                            width: 40px;
-                            height: 40px;
-                        }
-
-                        #navbar4 .menu-items {
-                            text-align: center;
-                            margin-top: 15px;
-                            margin-right: 10px;
-                            float: right;
-                        }
-                    </style>
-                    <ul id="navbar4">
-                        <li class="logo"><a href="index.html"><img src="img/logo.svg" alt="Logo"><span>DISEÑO WEB</span></a>
-                        </li>
-                        <li class="profile-image"><a href="#"><img src="img/profile_male.png" alt="Perfil"></a></li>
-                        <div class="menu-items">
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Acerca de</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Contacto</a></li>
+                <ul id="navbar3">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li class="dropdown">
+                        <a href="#">Servicios</a>
+                        <div class="dropdown-content">
+                            <a href="#">Diseño web</a>
+                            <a href="#">Desarrollo web</a>
+                            <a href="#">Marketing en línea</a>
                         </div>
-                    </ul>
+                    </li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
 
-                </article>
+                <hr>
 
-                <!-- Articulo Formulario -->
-                <article id="artFormRegistro">
 
-                    <style>
-                        #formEjemplo {
-                            max-width: 50vw;
-                            margin: 10px auto;
-                            padding: 10px 20px;
-                            background: #f4f7f8;
-                            border-radius: 8px;
-                        }
-    
-                        #formEjemplo input[type="text"],
-                        #formEjemplo input[type="email"],
-                        #formEjemplo input[type="password"],
-                        #formEjemplo textarea,
-                        #formEjemplo select {
-                            background: rgba(255, 255, 255, 0.1);
-                            border: none;
-                            font-size: 16px;
-                            height: auto;
-                            margin: 0;
-                            outline: 0;
-                            padding: 15px;
-                            width: 100%;
-                            background-color: #e8eeef;
-                            color: #8a97a0;
-                            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-                            margin-bottom: 30px;
-                        }
-    
-                        #formEjemplo input[type="radio"],
-                        #formEjemplo input[type="checkbox"] {
-                            margin: 0 4px 8px 0;
-                        }
-    
-                        #formEjemplo select {
-                            padding: 6px;
-                            height: 32px;
-                            border-radius: 2px;
-                        }
-    
-                        #formEjemplo button {
-                            padding: 19px 39px 18px 39px;
-                            color: #FFF;
-                            background-color: #4bc970;
-                            font-size: 18px;
-                            text-align: center;
-                            font-style: normal;
-                            border-radius: 5px;
-                            width: 100%;
-                            border: 1px solid #3ac162;
-                            border-width: 1px 1px 3px;
-                            box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-                            margin-bottom: 10px;
-                        }
-    
-                        #formEjemplo fieldset {
-                            margin-bottom: 30px;
-                            /* border: none; */
-                        }
-    
-                        #formEjemplo legend {
-                            font-size: 1.4em;
-                            margin-bottom: 10px;
-                        }
-    
-                        #formEjemplo label {
-                            margin-bottom: 8px;
-                        }
-                        #formEjemplo .label {
-                            display: block;
-                            margin-bottom: 8px;
-                        }
-                    </style>
-                    
-                    <h4>Formulario de Registro de Ejemplo</h4>
+                <p>Utilizaremos las propiedades <b>float:right</b> y <b>float:left</b> para empujar los elementos hacia
+                    la izquierda y derecha</p>
+                <style>
+                    #navbar4 {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #333;
+                        overflow: hidden;
+                    }
+
+                    #navbar4 li {
+                        float: left;
+                    }
+
+                    #navbar4 li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+
+                    #navbar4 li a:hover {
+                        background-color: #555;
+                    }
+
+                    #navbar4 .logo {
+                        float: left;
+                    }
+
+                    #navbar4 .logo span {
+                        vertical-align: middle;
+                        display: inline-block;
+                        margin-left: 10px;
+                        font-size: larger;
+                    }
+
+                    #navbar4 .logo img {
+                        filter: drop-shadow(0 0 2px white);
+                        width: 40px;
+                        height: 40px;
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
+
+                    #navbar4 .profile-image {
+                        float: right;
+                    }
+
+                    #navbar4 .profile-image img {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    #navbar4 .menu-items {
+                        text-align: center;
+                        margin-top: 15px;
+                        margin-right: 10px;
+                        float: right;
+                    }
+                </style>
+                <ul id="navbar4">
+                    <li class="logo"><a href="index.html"><img src="img/logo.svg" alt="Logo"><span>DISEÑO WEB</span></a>
+                    </li>
+                    <li class="profile-image"><a href="#"><img src="img/profile_male.png" alt="Perfil"></a></li>
+                    <div class="menu-items">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </div>
+                </ul>
+
+            </article>
+
+            <!-- Articulo Formulario -->
+            <article id="artFormRegistro">
+
+                <style>
+                    #formEjemplo {
+                        max-width: 50vw;
+                        margin: 10px auto;
+                        padding: 10px 20px;
+                        background: #f4f7f8;
+                        border-radius: 8px;
+                    }
+
+                    #formEjemplo input[type="text"],
+                    #formEjemplo input[type="email"],
+                    #formEjemplo input[type="password"],
+                    #formEjemplo textarea,
+                    #formEjemplo select {
+                        background: rgba(255, 255, 255, 0.1);
+                        border: none;
+                        font-size: 16px;
+                        height: auto;
+                        margin: 0;
+                        outline: 0;
+                        padding: 15px;
+                        width: 100%;
+                        background-color: #e8eeef;
+                        color: #8a97a0;
+                        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+                        margin-bottom: 30px;
+                    }
+
+                    #formEjemplo input[type="radio"],
+                    #formEjemplo input[type="checkbox"] {
+                        margin: 0 4px 8px 0;
+                    }
+
+                    #formEjemplo select {
+                        padding: 6px;
+                        height: 32px;
+                        border-radius: 2px;
+                    }
+
+                    #formEjemplo button {
+                        padding: 19px 39px 18px 39px;
+                        color: #FFF;
+                        background-color: #4bc970;
+                        font-size: 18px;
+                        text-align: center;
+                        font-style: normal;
+                        border-radius: 5px;
+                        width: 100%;
+                        border: 1px solid #3ac162;
+                        border-width: 1px 1px 3px;
+                        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+                        margin-bottom: 10px;
+                    }
+
+                    #formEjemplo fieldset {
+                        margin-bottom: 30px;
+                        /* border: none; */
+                    }
+
+                    #formEjemplo legend {
+                        font-size: 1.4em;
+                        margin-bottom: 10px;
+                    }
+
+                    #formEjemplo label {
+                        margin-bottom: 8px;
+                    }
+
+                    #formEjemplo .label {
+                        display: block;
+                        margin-bottom: 8px;
+                    }
+                </style>
+
+                <h1>Formulario de Registro de Ejemplo</h1>
 
                 <form action="index.html" method="GET" id="formEjemplo">
                     <h1> Registro </h1>
@@ -945,9 +1146,9 @@
 
                         <span class="label">Edad:</span>
                         <input type="radio" id="under_18" value="under_18" name="user_age" checked>
-                            <label for="under_18" class="light">Menor de 18</label><br>
+                        <label for="under_18" class="light">Menor de 18</label><br>
                         <input type="radio" id="over_18" value="over_18" name="user_age">
-                            <label for="over_18" class="light">Mayor de 18</label>
+                        <label for="over_18" class="light">Mayor de 18</label>
 
                     </fieldset>
 
@@ -965,7 +1166,8 @@
                                 <option value="python_developer">Python Developer</option>
                                 <option value="rails_developer">Rails Developer</option>
                                 <option selected value="web_designer">Web Designer (por defecto)</option>
-                                <option disabled value="wordpress_developer">Wordpress Developer (deshabilitado)</option>
+                                <option disabled value="wordpress_developer">Wordpress Developer (deshabilitado)
+                                </option>
                             </optgroup>
                             <optgroup label="Mobile">
                                 <option value="android_developer">Android Developer</option>
@@ -992,33 +1194,37 @@
 
                 </form>
 
-                </article>
+            </article>
 
 
-                                    <!-- Articulo X -->
-                <article id="artXXXX" style="display:none;">
-                    <h1>Articulo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam
-                        inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit.
-                        Culpa sunt impedit repellat.
-                        Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo,
-                        nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore
-                        totam neque iste.</p>
+            <!-- Articulo X -->
+            <article id="artXXXX" style="display:none;">
+                <h1>Articulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam
+                    inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit.
+                    Culpa sunt impedit repellat.
+                    Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo,
+                    nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore
+                    totam neque iste.</p>
 
 
-                </article>
+            </article>
 
-                <!-- Articulo X -->
-                <article id="artXXXX" style="display:none;">
-                    <h1>Articulo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam
-                        inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit.
-                        Culpa sunt impedit repellat.
-                        Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo,
-                        nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore
-                        totam neque iste.</p>
+            <!-- Articulo X -->
+            <article id="artXXXX" style="display:none;">
+                <h1>Articulo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat excepturi vel sint. Totam
+                    inventore asperiores earum quaerat doloremque optio voluptate cupiditate vel, eveniet itaque odit.
+                    Culpa sunt impedit repellat.
+                    Nihil quas ipsa sequi atque quod suscipit labore aperiam, quis aliquid laborum dignissimos. Illo,
+                    nobis! Similique natus et porro molestiae ipsam sapiente possimus, optio omnis, quisquam tempore
+                    totam neque iste.</p>
 
-                </article>
-    </body>
+            </article>
+
+
+            <!-- Script Buscador (en desarrollo)-->
+            <!-- <script src="js/search.js"></script> -->
+</body>
 
 </html>
