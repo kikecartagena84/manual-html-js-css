@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: lightcoral;
+            display: flex;
+            justify-content: space-between;
+        }
+        section {
+            background: lightgreen;
+        }
+
+        footer {
+            background: lightblue;
+        }
+
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <header>
+        <div style="display:inline-block;">
+            <img src="img/logo.svg" alt="">
+            <h3>Mi Web</h3>
+        </div>
+        <ul>
+            <li>Seccion 1</li>
+            <li>Seccion 2</li>
+            <li>Seccion 3</li>
+            <li><img src="img/profile_male.png" alt=""></li>
+        </ul>
+    </header>
+
+
+    <section>
+        <aside>
+            <ul>
+                <li>Ayer</li>
+                <li>Hoy</li>
+                <li>Mañana</li>
+            </ul>
+        </aside>
+        <div class="articles">
+            <article>
+                <h3>Artìculo</h3>
+                <img src="img/profile_female.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptas accusamus nemo error culpa eligendi magnam est quae quod ipsa quidem nulla exercitationem, ex aliquam harum necessitatibus, incidunt quo consectetur?</p>
+            </article>
+            <article>
+                <h3>Artìculo</h3>
+                <img src="img/profile_female.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptas accusamus nemo error culpa eligendi magnam est quae quod ipsa quidem nulla exercitationem, ex aliquam harum necessitatibus, incidunt quo consectetur?</p>
+            </article>
+            <article>
+                <h3>Artìculo</h3>
+                <img src="img/profile_female.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptas accusamus nemo error culpa eligendi magnam est quae quod ipsa quidem nulla exercitationem, ex aliquam harum necessitatibus, incidunt quo consectetur?</p>
+            </article>
+        </div>
+    </section>
+    
+    <footer>soy footer</footer>
+</body>
+</html>
