@@ -2,6 +2,8 @@
 Manual para alumnos del CEI del modulo de diseño Web 2023
 
 
+haciendo cambios desde testingSTuff!!!
+
 ## Secciones de nuestro manual
 - CSS
 - HTML
@@ -27,3 +29,5 @@ Manual para alumnos del CEI del modulo de diseño Web 2023
 
 
 ### JS:
+
+y además incluyendo mas cosas!
