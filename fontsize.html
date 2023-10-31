@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM vs REM vs PX</title>
+
+    <style>
+        /* :root {
+            font-size:16px;
+        } */
+
+        * {
+            box-sizing: border-box;
+            margin:0;
+        }
+
+        .container {
+            border: 1px solid black;
+            padding:5px;
+
+            /* font-size:16px; */
+        }
+
+        .container article {
+            border: 1px dashed red;
+            margin: 16px;
+
+            padding: 16px;
+        }
+
+        .container article.textrem {
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>EM vs REM vs PX</h1>
+
+    <div class="container">
+        <header>
+            <h2>EM: Tamaño relativo según el texto</h2>
+        </header>
+        <article>
+            <h3>Artículo utilizando EM</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non libero molestiae hic inventore temporibus earum distinctio beatae explicabo alias ullam rerum possimus deleniti, esse vero ad. Pariatur, obcaecati voluptate. Autem?
+        Blanditiis accusantium dolor ad at placeat illum illo ipsam aut voluptatem quisquam deserunt, quo ratione corporis fuga ea quia omnis minus. Facilis odio harum sequi consequuntur, placeat ullam minus hic.
+        Neque earum quisquam culpa dolor, esse hic voluptas repellat, consectetur facilis quia illum reprehenderit! At, incidunt eaque cupiditate non animi ipsa delectus nulla ea, officiis accusantium maxime sit tempora quaerat!</p>
+        </article>
+        <article class="textrem">
+            <h3>Artículo utilizando REM</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non libero molestiae hic inventore temporibus earum distinctio beatae explicabo alias ullam rerum possimus deleniti, esse vero ad. Pariatur, obcaecati voluptate. Autem?
+        Blanditiis accusantium dolor ad at placeat illum illo ipsam aut voluptatem quisquam deserunt, quo ratione corporis fuga ea quia omnis minus. Facilis odio harum sequi consequuntur, placeat ullam minus hic.
+        Neque earum quisquam culpa dolor, esse hic voluptas repellat, consectetur facilis quia illum reprehenderit! At, incidunt eaque cupiditate non animi ipsa delectus nulla ea, officiis accusantium maxime sit tempora quaerat!</p>
+        </article>
+    </div>
+</body>
+</html>
