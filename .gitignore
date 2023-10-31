@@ -1,0 +1,43 @@
+# Ignora siguientes archivos y carpeta #
+########################################
+00_galeria/
+tmp/
+PWA_duodrawer/
+PWA/
+no_PWA/
+no_*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Logs and databases #
+######################
+log/
+00_db/
+*.log
+*.sql
+*.sqlite
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
