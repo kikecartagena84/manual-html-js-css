@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM vs REM vs PX</title>
+    <style>
+        /* fuente raiz para el documento / <html> / root */
+        :root {
+            font-size:16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin:0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            font-size: 32px;
+            margin:20px;
+        }
+
+        header {
+            border: 1px dashed blue;
+            padding:10px;
+            /* padding: 1em;
+            font-size: 1em; */
+        }
+
+        article {
+            border: 1px solid red;
+            padding:10px;
+            /* padding: 1rem;
+            font-size: 1rem; */
+        }
+
+
+
+        /* elementos :active y a:visited */
+        /* button {
+            background-color: red;
+        }
+        button:active {
+            background-color: green;
+        }
+
+        button:visited {
+            background-color: green;
+        }
+        
+        a:visited {
+            color: green;
+        }
+
+        p:active {
+            background-color: gray;
+        } */
+    </style>
+</head>
+<body>
+
+    <h1>EM vs REM vs PX</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores corporis sunt eveniet molestiae pariatur, voluptate, sequi sint ullam, explicabo esse fugit! Vel illo aliquam sunt odit, maiores eos esse placeat!</p>
+
+    <div class="container">
+
+        <header>Soy header</header>
+        <article>
+            <h3>Soy artículo</h3>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, quia? Eum velit vitae perspiciatis minima, magni beatae, vero aliquid obcaecati a eligendi voluptatem! Quos dolorem sapiente minus repellendus laudantium excepturi.
+            Maiores quidem nam quam corporis quod! Doloremque quasi odio sequi. Provident consequuntur culpa eaque odio facere distinctio, quisquam explicabo! Est voluptates quidem earum exercitationem commodi quae facilis nulla ducimus placeat?</p>
+
+            <!-- <div>
+                <button active>Boton común</button>
+                <button>Boton activo</button>
+    
+                <a href="#"> soy un link visitado</a>
+            </div> -->
+
+
+        </article>
+
+        
+    </div>
+<!--     
+    <p>
+        This paragraph contains a link:
+        <a href="#">This link will turn red while you click on it.</a>
+        The paragraph will get a gray background while you click on it or the link.
+      </p> -->
+
+</body>
+</html>
