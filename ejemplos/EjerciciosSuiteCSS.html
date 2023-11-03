@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de SuiteCSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <div>
+
+        <h1>Algunos Ejemplos</h1>
+
+        <!-- Estilos Inline -->
+        <hr>
+        <div>
+            <style>
+                .u-textCenter {
+                    text-align: center;
+                }
+                .u-textBold {
+                    font-weight: bold;
+                }
+                .u-imgRound {
+                    border-radius: 50%;
+                }
+    
+                /* sería preferente crear un componente */
+                .u-btnBlue {
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: blue;
+                    color: white;
+                }
+            </style>
+            <h3>Utilidades:</h3>
+
+            <ul>
+
+                <li> texto Centrado y Negrita</li>
+                <li><p style="text-align: center; font-weight: bold;">Texto centrado y en negrita</p></li>
+                <li></li>
+
+                <li>Imagen con borde redondeado:</li>
+                <li><img src="../img/flexbox/flex-direction.svg" alt="Imagen" style="border-radius: 50%;"></li>
+                <li></li>
+
+                <li>Botón con fondo azul</li>
+                <li><button style="background-color: blue; color: white; padding: 10px 20px; border: none;">Click Me</button></li>
+                <li></li>
+
+            </ul>
+        </div>
+
+        <hr>
+        <div>
+            <style>
+                .box {
+                    padding: 10px;
+                    background-color: gray;
+                }
+                .header {
+                    font-size: 24px;
+                }
+               
+            </style>
+            <h3>Componentes:</h3>
+
+            <ul>
+                <li>Caja con fondo gris:</li>
+                <li><div class="box" style="background-color: gray; padding: 10px;">Contenido de la caja</div></li>
+                <li></li>
+
+                <li> Encabezado grande:</li>
+                <li><h1 class="header" style="font-size: 24px;">Este es un encabezado grande</h1></li>
+                <li></li>
+
+            </ul>
+        </div>
+
+        <hr>
+        <div>
+            <style>
+                .button {
+                    border: none;
+                    background-color: blue; 
+                    color: white;
+                }
+                .button--large {
+                    padding: 15px 30px;
+                }
+                /* ------ */
+                .box {
+                    padding: 10px;
+                    border: 1px solid black;
+                }
+                .box--red {
+                    background-color: red;
+                }
+            </style>
+            <h3>Componentes con Modificadores:</h3>
+
+            <ul>
+                <li>Botón grande:</li>
+                <li><button class="button button--large" style="background-color: blue; color: white; padding: 15px 30px; border: none;">Click Me</button></li>
+                <li></li>
+
+                <li>Caja roja con borde:</li>
+                <li><div class="box box--red" style="background-color: red; padding: 10px; border: 1px solid black;">Contenido de la caja</div></li>
+                <li></li>
+
+            </ul>
+        </div>
+
+        <hr>
+        <div>
+            <style>
+                .button {
+                    padding: 10px 20px;
+                    border: none;
+                }
+                .is-active {
+                    background-color: gray;
+                    color: black;
+                }
+                /* ------ */
+                .box {
+                    padding: 10px;
+                }
+                .is-highlighted {
+                    background-color: yellow;
+                }
+            </style>
+            <h3>Componentes con Estados:</h3>
+
+            <ul>
+                <li>Botón con estado "desactivado":</li>
+                <li><button class="button is-active" style="background-color: gray; color: black; padding: 10px 20px; border: none;">Click Me</button></li>
+                <li></li>
+
+                <li>Caja con estado "resaltado":</li>
+                <li><div class="box is-highlighted" style="background-color: yellow; padding: 10px;">Contenido de la caja</div></li>
+                <li></li>
+
+            </ul>
+        </div>
+
+
+  
+
+    </div>
+
+    <div>
+        <hr>
+    </div>
+
+    <style>
+        .truncate {
+  white-space: nowrap;     /* Evita el salto de línea */
+  overflow: hidden;        /* Oculta el contenido que no cabe */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos al final del texto */
+
+        }
+    </style>
+    <h1>Parrafo</h1>
+    <div style="background-color: lightcoral; padding: 10px; text-align:justify;">
+        <h1 style="color: #fff; font-size: 24px;">Parrafo con estilos en linea</h1>
+        <p class="truncate" style="color: #555; font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolorem rerum doloribus sint voluptas velit provident eligendi praesentium maxime saepe necessitatibus qui fuga sequi. Eius minima omnis molestiae? Quaerat, corporis!
+        Rerum vel, dolorem quo nostrum corrupti accusantium vitae temporibus veniam totam illo rem ut iste? Expedita, corrupti earum quibusdam quod accusantium porro cum officiis odio, sit debitis quam voluptate accusamus.
+        Voluptatem, quasi magni in eos omnis aperiam quas sequi distinctio ex rem deleniti illo minus exercitationem suscipit consequuntur amet accusamus cum officiis laborum eligendi aspernatur maiores maxime fugit. Aperiam, illo?
+        Eius architecto ut officiis. Illo perferendis ipsa optio qui voluptatum, praesentium beatae obcaecati ducimus eligendi omnis alias repellendus eum voluptates neque excepturi esse veritatis magnam totam expedita sapiente. Et, sit!
+        Perspiciatis asperiores doloribus reiciendis? Cum, ut porro! Consequatur porro, obcaecati reprehenderit optio at recusandae culpa natus distinctio pariatur, corrupti exercitationem iusto. Totam, tempora reprehenderit. Quos mollitia vel eaque ratione hic?</p>
+    </div>
+     
+    <div>
+        <hr>
+    </div>
+
+    <h1>Galería</h1>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+        <img src="https://picsum.photos/seed/1/200/300" alt="Foto 1" style="width: 200px; height: 150px;">
+        <img src="https://picsum.photos/seed/2/200/300" alt="Foto 2" style="width: 200px; height: 150px;">
+        <img src="https://picsum.photos/seed/3/200/300" alt="Foto 3" style="width: 200px; height: 150px;">
+        <img src="https://picsum.photos/seed/4/200/300" alt="Foto 4" style="width: 200px; height: 150px;">
+        <img src="https://picsum.photos/seed/5/200/300" alt="Foto 5" style="width: 200px; height: 150px;">
+    </div>
+   
+    <div>
+        <hr>
+    </div>
+
+    <h1>Tweet</h1>
+    <div  style="border: 1px solid #ccc; padding: 10px; width: 300px; margin: 10px;">
+        <img src="../img/profile_female.png" alt="Imagen de Perfil" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+        <div >
+            <span style="font-weight: bold;">@loveBEM</span>
+            <span style="font-size: 12px; color: #888; margin-left: 10px;">31 de Octubre, 2023</span>
+            <p style="margin: 10px 0;">Agrupación de elementos utilizando BEM:</p>
+            <img src="https://devopedia.org/images/article/152/2881.1549627976.png" alt="Imagen del Tweet" style="max-width: 100%; margin-bottom: 10px;">
+            <div  style="display: flex; align-items: center;">
+                <i class="fas fa-heart" style="color: red; margin-right: 5px;"></i>
+                <span style="margin-right: 10px;">10</span>
+                <i class="fas fa-reply" style="color: #1DA1F2; margin-right: 5px;"></i>
+                <span>5</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
