@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo - TimeLine Vertical BEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* ------------ Componentes básicos BEM ------------ */
+
+        .round-image {
+            border-radius: 50%;
+        }
+
+        /* Componente de Tarjeta */
+        .card {
+            border: 1px dashed gray;
+            /*filter:drop-shadow(1px 1px 2px black);*/  /* sombra individual para cada elemento interno */
+            box-shadow: 0px 0px 2px red; /* sombra exterior de caja */
+        }
+
+        .card__header {
+            display: flex;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+
+        /* se realiza desde VerticalTimeline para poder reutilizar card__header en otro lado si quisiera */
+        /*.card__header:nth-child(even){
+            flex-direction: row-reverse;
+        } */
+
+        .card__header-img {
+            max-width: 50px;
+        }
+        .card__header-text{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .card__header-name{ 
+            margin: 0px;
+        }
+        
+        .card__header-date{ 
+        }
+
+
+        .card__content {
+
+        }
+
+        /* Componente de GALERIA */
+        .gallery {
+            display:flex;
+            flex-wrap: wrap;
+            gap:10px;
+            justify-content: center;
+            padding:20px;
+        }	        
+        .gallery__img {
+            max-height: 250px;
+            border-radius: 5%;
+            filter:drop-shadow(1px 1px 2px black);
+        }
+
+
+        /* Componente de STATS */
+        .stats {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .stats__item {
+            margin: 5px 0;
+            text-align: center;
+        }
+        .site-header {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            border: 2px solid peru;
+        }
+
+
+    </style>
+
+    <style>
+
+        /* ------------ Bloques BEM  Vertical TimeLine ------------ */
+
+
+        .vertical-timeline {
+            margin:10px 0 10px 0;
+            /* background-color: lightsteelblue; */
+        }
+
+        .vertical-timeline__item {
+            display: flex;
+        }
+
+        .vertical-timelinea__card {
+            width:calc(50% - 40px);
+        }
+        /* No hace falta tarjeta vacía porque el flex row se encarga de distribuir el espacio */
+        /* .vertical-timeline__card-empty {
+            max-width: 200px;
+            width:calc(50% - 40px);
+        } */
+
+        .vertical-timeline__year {
+            color:white;
+            background-color:blueviolet;
+            min-width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            font-size:x-large;
+            margin:0 5px 0 5px;
+            /* position:relative;
+            left:40px; */
+            
+        }
+        .vertical-timeline__ruler {
+
+        }
+        .vertical-timeline__line {
+            height: calc(100% - 70px);
+            margin-left: 40px;
+            border-left: 2px dashed red;
+        }
+
+        /* Elementos Reversibles */
+        .vertical-timeline:nth-child(even) .card__header {
+            flex-direction: row-reverse;
+            text-align:right;
+        }
+        .vertical-timeline:nth-child(odd) .vertical-timeline__item {
+            flex-direction: row-reverse;
+        }
+
+        /* .vertical-timeline:nth-child(even) .vertical-timeline__line {
+            border-right: 2px dashed red;
+            margin-right: 40px;
+            border-left: 0px;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de TimeLine Vertical con Metodología BEM</h1>
+    
+    <div class="container">
+        
+        <header class="site-header">
+            <h1><i class="fa fa-users"></i></h1>
+            <div class="card__header-text">
+                <h3 class="card__header-name">Anuario de Alumno</h3>
+                <small>Hogwarts Escuela de Magía</small>
+            </div>
+        </header>
+
+        <div class="vertical-timeline">
+            <div class="vertical-timeline__item">
+                <div class="vertical-timelinea__card card">
+                    <div class="card__header">
+                        <img class="round-image card__header-img" src="../img/profile_male.png" alt="">
+                        <div class="card__header-text">
+                            <h3 class="card__header-name">Potter, Harry</h3>
+                            <small  class="card__header-date">10 Marzo 2022 - 7:45PM</small>
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <!-- <h3>Proyectos</h3> -->
+                        <div class="gallery">
+                            <img class="gallery__img" src="https://picsum.photos/seed/1/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/2/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/3/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/4/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/5/200/300" alt="">
+                        </div>
+
+                        <!-- <h3>Estadísticas</h3> -->
+                        <hr>
+                        <ul class="stats">
+                            <li class="stats__item"><strong>Asistencia</strong><br> 95%</li>
+                            <li class="stats__item"><strong>Comportamiento</strong><br> 80%</li>
+                            <li class="stats__item"><strong>Calificación</strong><br> 10</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical-timeline__ruler">
+                    <div class="vertical-timeline__year">2022</div>
+                    <div class="vertical-timeline__line"></div>
+                </div>
+                <!-- <div class="vertical-timeline__card-empty">
+                    tarjeta vacía
+                </div> -->
+                
+            </div>
+        </div>
+
+
+        <div class="vertical-timeline">
+            <div class="vertical-timeline__item">
+                <div class="vertical-timelinea__card card">
+                    <div class="card__header">
+                        <img class="round-image card__header-img" src="../img/profile_female.png" alt="">
+                        <div class="card__header-text">
+                            <h3 class="card__header-name">Potter, Harry</h3>
+                            <small  class="card__header-date">10 Septiembre 2021 - 12:45PM</small>
+                        </div>
+                    </div>
+                    <div class="card__content">
+                        <div class="gallery">
+                            <img class="gallery__img" src="https://picsum.photos/seed/6/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/7/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/8/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/9/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/10/200/300" alt="">
+                            <img class="gallery__img" src="https://picsum.photos/seed/11/200/300" alt="">
+                        </div>
+
+                        <!-- <h3>Estadísticas</h3> -->
+                        <hr>
+                        <ul class="stats">
+                            <li class="stats__item"><strong>Asistencia</strong><br> 95%</li>
+                            <li class="stats__item"><strong>Comportamiento</strong><br> 80%</li>
+                            <li class="stats__item"><strong>Calificación</strong><br> 10</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical-timeline__ruler">
+                    <div class="vertical-timeline__year">2021</div>
+                    <div class="vertical-timeline__year"> <i class="fa fa-book"></i> </div>
+                    <div class="vertical-timeline__line"></div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
