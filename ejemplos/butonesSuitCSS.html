@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones SuiteCSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <style>
+
+        /* Define colores a través de variables CSS */
+        :root {
+            --default-color: lightgray;
+            --default-color-active: gray;
+            --primary-color: blue;
+            --primary-color-active: darkblue;
+            --success-color: green;
+            --success-color-active: darkgreen;
+            --warning-color: orange;
+            --warning-color-active: darkorange;
+            --danger-color: red;
+            --danger-color-active: darkred;
+
+            --text-color: white;
+
+
+            /* Variables de Colores sobre-escribibles */
+            --btn-color-active: white;
+            --btn-bg-active: gray;
+            --btn-border-active: gray;
+        }
+
+        /* Estilos para botones default */
+        .Btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin:5px;
+
+            /* por si es un anchor link */
+            text-decoration: none; 
+            color: black;
+            background-color: var(--default-color);
+            border-color: var(--default-color);
+        }
+        .Btn:hover {
+            color: var(--btn-color-active);
+            background-color: var(--btn-bg-active);
+            border-color: var(--btn-border-active);
+        }
+
+        /* Estilos para botones de tamaño pequeño */
+        .Btn--sizeSmall {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        /* Estilos para botones de tamaño grande */
+        .Btn--sizeLarge {
+            padding: 15px 30px;
+            font-size: 18px;
+        }        
+        
+        /* Estilos para botones de tamaño grande */
+        /* .Btn--sizeXLarge {
+            padding: 15px 30px;
+            font-size: 25px;
+        } */
+
+        /* Estilos para botones de color primario */
+        .Btn--primary {
+            /* sobreescribo las variables de hover */
+            --btn-color-active: white;
+            --btn-bg-active: var(--primary-color-active);
+            --btn-border-active: var(--primary-color-active);
+
+
+            background-color: var(--primary-color);
+            color:white;
+        }
+
+        /* Estilos para botones de color secundario */
+        .Btn--success {
+            /* sobreescribo las variables de hover */
+            --btn-color-active: white;
+            --btn-bg-active: var(--success-color-active);
+            --btn-border-active: var(--success-color-active);
+
+            background-color: var(--success-color);
+            color:white;
+        }
+
+        /* Estilos para botones de color warning */
+        .Btn--warning {
+            /* sobreescribo las variables de hover */
+            --btn-color-active: black;
+            --btn-bg-active: var(--warning-color-active);
+            --btn-border-active: var(--warning-color-active);
+
+            background-color: var(--warning-color);
+        }
+
+        /* Estilos para botones de color danger */
+        .Btn--danger {
+            /* sobreescribo las variables de hover */
+            --btn-color-active: white;
+            --btn-bg-active: var(--danger-color-active);
+            --btn-border-active: var(--danger-color-active);
+
+            background-color: var(--danger-color);
+            color:white;
+        }
+
+        /* Estilos para botones de contorno (outline) de color default */
+        .Btn--outline {
+            /* sobreescribo las variables de hover */
+            --btn-color-active: white;
+            --btn-bg-active: var(--default-color);
+            --btn-border-active: var(--default-color);
+
+            background-color: transparent;
+            border: 2px solid var(--default-color);
+            color: var(--default-color-active);
+        }
+
+        /* Estilos para botones de contorno (outline) de color primario */
+        .Btn--outlinePrimary {
+            /* sobreescribo las variables de hover */
+            --btn-color-active: white;
+            --btn-bg-active: var(--primary-color);
+            --btn-border-active: var(--primary-color);
+
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Estilos para botones de contorno (outline) de color secundario */
+        .Btn--outlineSuccess {
+            /* sobreescribo las variables de hover */
+            --btn-color-active: white;
+            --btn-bg-active: var(--success-color);
+            --btn-border-active: var(--success-color);
+
+            background-color: transparent;
+            border: 2px solid var(--success-color);
+            color: var(--success-color);
+        }
+
+        /* Estilos para botones de contorno (outline) de color warning */
+        .Btn--outlineWarning {
+            /* sobreescribo las variables de hover */
+            --btn-color-active: white;
+            --btn-bg-active: var(--warning-color);
+            --btn-border-active: var(--warning-color);
+
+            background-color: transparent;
+            border: 2px solid var(--warning-color);
+            color: var(--warning-color);
+        }
+
+        /* Estilos para botones de contorno (outline) de color danger */
+        .Btn--outlineDanger {    
+            /* sobreescribo las variables de hover */
+            --btn-color-active: white;
+            --btn-bg-active: var(--danger-color);
+            --btn-border-active: var(--danger-color);
+
+            background-color: transparent;
+            border: 2px solid var(--danger-color);
+            color: var(--danger-color);
+        }
+
+        /* Estilos para botones activos (esta regla debe ir al final) */
+        .is-active {
+            color: var(--btn-color-active);
+            background-color: var(--btn-bg-active);
+            border-color: var(--btn-border-active);
+        }
+    </style>
+
+    <hr>
+    <h3>Aplicado a etiquetas Buttons</h3>
+
+    <button class="Btn">Default</button>
+    <button class="Btn Btn--primary">Primary</button>
+    <button class="Btn Btn--success">Success</button>
+    <button class="Btn Btn--warning">Warning</button>
+    <button class="Btn Btn--danger">Danger</button>
+    <br>
+    <button class="Btn Btn--outline">Default Outline</button>
+    <button class="Btn Btn--outlinePrimary">Primary Outline</button>
+    <button class="Btn Btn--outlineSuccess">Success Outline</button>
+    <button class="Btn Btn--outlineWarning">Warning Outline</button>
+    <button class="Btn Btn--outlineDanger">Danger Outline</button>
+    <br>
+    <button class="Btn Btn--sizeSmall">Small</button>
+    <button class="Btn">Regular</button>
+    <button class="Btn Btn--sizeLarge">Large</button>
+
+    <hr>
+    <h3>Aplicado a etiquetas Anchor Links - Vínculos</h3>
+    
+    <a href="#" class="Btn">Default</a>
+    <a href="#" class="Btn Btn--primary">Primary</a>
+    <a href="#" class="Btn Btn--success">Success</a>
+    <a href="#" class="Btn Btn--warning">Warning</a>
+    <a href="#" class="Btn Btn--danger">Danger</a>
+    <br>
+    <a href="#" class="Btn Btn--outline">Default Outline</a>
+    <a href="#" class="Btn Btn--outlinePrimary">Primary Outline</a>
+    <a href="#" class="Btn Btn--outlineSuccess">Success Outline</a>
+    <a href="#" class="Btn Btn--outlineWarning">Warning Outline</a>
+    <a href="#" class="Btn Btn--outlineDanger">Danger Outline</a>
+    <br>
+    <a href="#" class="Btn Btn--success Btn--sizeSmall">Small</a>
+    <a href="#" class="Btn Btn--success">Regular</a>
+    <a href="#" class="Btn Btn--success Btn--sizeLarge">Large</a>
+
+    <hr>
+    <h3>Aplicado a otras etiquetas Html (ej: h1)</h3>
+    
+
+    <h1 class="Btn">Default</h1>
+    <h1 class="Btn Btn--primary">Primary</h1>
+    <h1 class="Btn Btn--success">Success</h1>
+    <h1 class="Btn Btn--warning">Warning</h1>
+    <h1 class="Btn Btn--danger">Danger</h1>
+    <br>
+    <h1 class="Btn Btn--outline">Default Outline</h1>
+    <h1 class="Btn Btn--outlinePrimary">Primary Outline</h1>
+    <h1 class="Btn Btn--outlineSuccess">Success Outline</h1>
+    <h1 class="Btn Btn--outlineWarning">Warning Outline</h1>
+    <h1 class="Btn Btn--outlineDanger">Danger Outline</h1>
+    <br>
+    <h1 class="Btn Btn--outlineDanger Btn--sizeSmall">Small <i class="fa fa-smile"></i></h1>
+    <h1 class="Btn Btn--outlineDanger">Regular <i class="fa fa-smile"></i></h1>
+    <h1 class="Btn Btn--outlineDanger Btn--sizeLarge">Large <i class="fa fa-smile"></i></h1>
+
+    <script>
+        // script que agrega/quita la clase "is-active" a cada botón al que le hago click
+        const btns = document.querySelectorAll('.Btn');
+        //console.log("botones es:",btns);
+        let i=0;
+        btns.forEach(btn => {
+            i++;
+            let num=i;
+            btn.addEventListener('click', () => {
+                console.log("Hice Click en botón: "+num);
+                btn.classList.toggle('is-active');
+            });
+
+            // btn.addEventListener('mouseover', () => {
+            //     console.log("Mouse Over en botón: "+num);
+            //     btn.classList.add('is-active');
+            // });
+            // btn.addEventListener('mouseout', () => {
+            //     console.log("Mouse Out en botón: "+num);
+            //     btn.classList.remove('is-active');
+            // });
+        });
+    </script>
+</body>
+
+</html>
