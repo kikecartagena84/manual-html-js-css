@@ -1,0 +1,155 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+
+	/* Flex */
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	
+
+	/* Grid */
+	/* 
+	display: grid;
+	height: 100vh; 
+	*/
+	
+} 
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	/* Flex */
+	display: flex;
+
+	/* Grid */
+	/* 
+	display:grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px; 
+	*/
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-conciertos {
+	/*Flex */
+	width: 70%;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+
+	/* Grid */
+	/* 
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px; 
+	*/
+
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+	/* Flex */
+	width: calc(33% - 16px);
+}
+
+.card .textos {
+	height: 100%;
+	
+	/* Flex */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	/* Grid */
+	/* display: grid; 
+	align-content: space-between; */
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+
+	/* Flex */
+	width: 30%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	/* Grid */
+	/* 
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	align-items:center; 
+	*/
+
+
+}
+
+.banner ul {
+	list-style: none;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+
+
+/* 2 Columns */
+@media screen and (max-width: 900px) {
+
+}
+
+/* 1 Column */
+@media screen and (max-width: 700px) {
+
+	
+} 
+
+@media screen and (max-width: 500px) {
+
+}
