@@ -137,19 +137,51 @@ body {
 	cursor: pointer;
 }
 
+/*
+Media Type (all|print|screen|speech):
+
+all - por todos los tipos
+screen - para pantallas
+print - vista previa de impresion
+speech - para screen readers
+
+Operadores (and|or|not): 
+
+and, or, not
+
+Breakpoints (max-width:480px):
+
+    320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV
+
+*/
 
 
-/* 2 Columns */
+
+/* 2 Column + 1 banner */
 @media screen and (max-width: 900px) {
-
+	.card {
+		width: calc(50% - 16px);
+	}
 }
 
-/* 1 Column */
+/* 1 Columna */
 @media screen and (max-width: 700px) {
 
-	
+	.contenedor {
+		flex-wrap:wrap;
+		gap:20px;
+	}
+	.card {
+		width: 100%;
+	}
+	.banner {
+		width:100%;
+	}
+	.contenedor-conciertos {
+		width: 100%;
+	}
 } 
-
-@media screen and (max-width: 500px) {
-
-}
