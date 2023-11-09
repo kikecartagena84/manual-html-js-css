@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rojo {
+            background: red;
+            height: 100px;
+            width: 100px;
+            border: 2px green solid;
+        }
+
+        #especial {
+            position: static; /* por defecto, respetando el flojo de la página. No influeye los valores top, left, right, bottom */
+            position: relative; /* respetando el flujo de la página. Se posiciona respecto a su posición original, e influyen los valores top, left, right, bottom */
+            position: absolute; /* se posiciona respecto a su padre más cercano que tenga una posición relativa o body */
+            position: fixed; /* se posiciona respecto a la ventana del navegador (incluso haciendo scroll) */
+
+            filter:drop-shadow(2px 2px 2px black);
+            bottom: 50px;
+            left: 20px;
+        }
+
+        .content {
+          position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posiciones</h1>
+
+    <div class="content">
+        <div class="rojo"></div>
+        <div class="rojo" id="especial"></div>
+        <div class="rojo"></div>
+        olestias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, ias? Minima quidem recusandae quaerat reiciendis illum laboriosam quos inventore dolore et vero autem, totam consectetur beatae ipsa magnam! Ipsum quibusdam aut enim, beatae fugit expedita doloribus sapiente.
+        Eius nulla, eum pariatur quia deserunt praesentium nobis explicabo ex temporibus facilis, facere autem non rerum incidunt eligendi voluptatem maxime laboriosam, modi dignissimos omnis exercitationem. Eius eum doloremque ut nulla.
+    </div>
+</body>
+</html>
